@@ -1,3 +1,17 @@
 drush en locale
-language-add  drush language-add pl
- drush language-add pl
+drush language-add pl
+drush language-enable pl
+drush language-default pl
+drush en l10n_update
+drush l10n-update
+drush en book
+drush en blog
+drush en forum
+drush en php
+drush en poll
+drush dl views-7.x-3.x-dev
+drush en views
+drush dl advagg-7.x-2.x-dev 
+drush en advagg
+drush dl fast_404-7.x-1.x-dev
+drush en fast_404
