@@ -1,0 +1,3 @@
+drush en locale
+language-add  drush language-add pl
+ drush language-add pl
