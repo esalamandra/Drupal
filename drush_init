@@ -15,3 +15,17 @@ drush dl advagg-7.x-2.x-dev
 drush en advagg
 drush dl fast_404-7.x-1.x-dev
 drush en fast_404
+drush dl xmlsitemap-7.x-2.x-dev
+drush en xmlsitemap
+drush dl ckeditor-7.x-1.x-dev
+drush en ckeditor
+drush dl context-7.x-3.x-dev
+drush el context
+drush en capacha cloudflare
+drush en rules boost httpr
+drush en memcache
+drush en microdata
+drush en metatag
+drush dl zen-7.x-6.x-dev
+drush en zen
+
