@@ -56,3 +56,4 @@ drush dl views_bulk_operations-7.x-3.x-dev
 drush en views_bulk_operations
 drush dl views_arg_parent_term-7.x-1.x-dev
 drush en views_arg_parent_term
+drush en cookiecontrol
