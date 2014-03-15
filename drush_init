@@ -28,4 +28,13 @@ drush en microdata
 drush en metatag
 drush dl zen-7.x-6.x-dev
 drush en zen
-
+drush dl admin_menu-7.x-3.x-dev 
+drush en admin_menu
+drush dl module_filter-7.x-2.x-dev 
+drush en module_filter
+drush dl widgets-7.x-1.x-dev 
+drush en widgets
+drush dl sociallogin-7.x-4.x-dev 
+drush en sociallogin
+drush dl elysia_cron-7.x-2.x-dev 
+drush en elysia_cron
