@@ -1,0 +1,70 @@
+
+$zen-column-count:  6;
+$zen-gutter-width:  20px;
+
+#header {
+  @include zen-grid-container;
+
+  #logo {
+    @include zen-grid-item(4,1);
+  }
+  .nested {
+    @include zen-grid-container;
+    @include zen-grid-item(2,5);
+
+    #submenu {
+      @include zen-grid-item(6,1);
+    }
+    #social {
+      @include zen-clear();
+      @include zen-grid-item(6,1);
+    }
+  }
+  #mainmenu {
+    @include zen-clear();
+    @include zen-grid-item(6,1);
+  }
+  #slider {
+    @include zen-clear();
+    @include zen-grid-item(6,1);
+  }
+}
+
+#page {
+  @include zen-grid-container;
+
+  #ourportals {
+    @include zen-grid-item(6,1);
+  }
+
+  #content {
+    @include zen-clear();
+    @include zen-grid-container;
+
+    #maincontent {
+      @include zen-grid-item(6,1);
+    }
+    #leftcontent {
+      @include zen-clear();
+      @include zen-grid-item(3,1);
+    }
+    #rightcontent {
+      @include zen-grid-item(3,4);
+    }
+  }
+  #bottom {
+    @include zen-clear();
+    @include zen-grid-container;
+
+    #blog {
+      @include zen-grid-item(3,1);
+    }
+    #partners {
+      @include zen-grid-item(3,4);
+    }
+  }
+  #footer {
+    @include zen-clear();
+    @include zen-grid-item(6,1);
+  }
+}
