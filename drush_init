@@ -63,3 +63,14 @@ metatag_dc metatag_opengraph metatag_twitter_cards metatag_views php uc_product
 redirect uc_roles rules_scheduler rules_admin uc_store uc_taxes term_depth metatags_quick_import views_ui 
 xmlsitemap_custom xmlsitemap_engines xmlsitemap_menu xmlsitemap_node xmlsitemap_taxonomy xmlsitemap_user
 Libraries 
+advagg_[css,js]
+cache/normal 
+
+
+fix_ovener
+
+ckeditor
+
+
+drush variable-set preprocess_js 1
+drush variable-set preprocess_css 1
