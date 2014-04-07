@@ -74,3 +74,8 @@ ckeditor
 
 drush variable-set preprocess_js 1
 drush variable-set preprocess_css 1
+
+
+http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.4/ckeditor_4.3.4_full.zip
+
+git clone --no-checkout -b full/latest git://github.com/ckeditor/ckeditor-releases.git ckeditor
