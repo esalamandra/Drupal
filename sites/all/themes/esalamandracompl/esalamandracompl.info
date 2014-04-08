@@ -97,6 +97,9 @@ regions[leftcontent]	= Page > Left content
 regions[rightcontent]	= Page > Right content
 regions[blog]			= Bottom > Blog
 regions[partners]		= Bottom > Partners
+regions[foot-one-col]	= Footer > Column > 1
+regions[foot-two-col]	= Footer > Column > 2
+regions[foot-three-col]	= Footer > Column > 3
 regions[footer]			= Footer > Footer
 
 ; The page_top and page_bottom regions are hidden, which means they will not

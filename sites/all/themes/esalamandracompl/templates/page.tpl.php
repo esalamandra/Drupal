@@ -45,7 +45,20 @@
       </div>
     </div>
     <div id="footer">
-      <?php print render($page['footer']); ?>
+      <div class="row">
+        <div class="one-three">
+          <?php print render($page['foot-one-col']); ?>
+        </div>
+        <div class="two-three">
+          <?php print render($page['foot-two-col']); ?>
+        </div>
+        <div class="three-three">
+          <?php print render($page['foot-three-col']); ?>
+        </div>
+      </div>
+      <div class="row">
+        <?php print render($page['footer']); ?>
+      </div>
     </div>
   </div>
 

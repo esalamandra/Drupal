@@ -6,6 +6,9 @@ $sub_hover: darken($sub_normal, 15);
 $link_normal:#fdfdfd;
 $link_hover: darken($link_normal,20);
 
+$link_normal_dark:#000000;
+$link_hover_dark:lighten($link_normal_dark, 5);
+
 $orange: #fa4700;
 $orange2: #e3470a;
 $white: #fdfdfd;

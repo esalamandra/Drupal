@@ -68,3 +68,18 @@ $zen-gutter-width:  20px;
     @include zen-grid-item(6,1);
   }
 }
+
+.row {
+  @include zen-clear();
+  @include zen-grid-item(6,1);
+}
+
+.one-three {
+  @include zen-grid-item(2,1);
+}
+.two-three {
+  @include zen-grid-item(2,3);
+}
+.three-three {
+  @include zen-grid-item(2,5);
+}

@@ -1,12 +1,64 @@
 html {
-	background:#141414 url(../images/bg.jpg) center top;
+	background:url(../images/bg.jpg) center top;
 	font-family: 'Open Sans', sans-serif;
+	background-size:cover;
 }
+
+.edit a, .delete a {
+	padding:2px 3px;
+	background:#eee;
+	@include link-colors($link_normal_dark,$link_hover_dark,$link_hover_dark,$link_normal_dark,$link_hover_dark);
+}
+
+input, .edit a, .delete a {
+	font-size:12px;
+	@include border-radius(3px);
+	border:1px solid #fff;
+	padding:2px 10px;
+	&:hover {
+		background:$orange;
+	}
+}
+
+
+
+.form-text {
+	@include border-radius(3px);
+	background:#eee;
+	border:1px solid #fff;
+	padding:2px 5px;
+}
+		
+tr.even, tr.odd {
+	background-color:transparent !important;
+	border-bottom:1px solid #aaa !important;
+}
+
+mark {
+	@include border-radius(10px);
+	font-size:12px;
+	padding: 2px 3px;
+}
+mark.new {
+	background-color:transparent;
+	color:#c00;
+}
+mark.updated {
+	background-color:transparent;
+	color:#ff0;
+}
+
 
 #wrapper {
 	color:$light-color;
 	max-width:1200px;
 	margin:0 auto;
+}
+
+#header {
+	background:url(../images/bglogo.png);
+	background-repeat:no-repeat;
+	background-position:left 20px;
 }
 
 a {

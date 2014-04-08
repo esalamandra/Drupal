@@ -1,15 +1,22 @@
 #logo {
-	background:url(../images/bglogo.png); 
-	background-repeat: none;
-	background-position: left 20px;
+	//background:url(../images/bglogo.png); 
+	//background-repeat: none;
+	//background-position: left 20px;
 	min-height:200px;
  
 	h1 {
+		
+
 		a{
 			font-size: 52px;
 			text-transform:uppercase;
 			color: #fa4700; // zmiana > gradient
-			border: 3px solid #000; // zmiana > kolor borderu
+			//border: 3px solid #000; // zmiana > kolor borderu
+			font-family: 'bebas_neueregular';
+			//@include text-shadow(#111111 0 0 3px true);
+			    text-shadow: -3px -1px #111111, 1px 3px #111111, 3px 1px #111111, -1px -3px #111111, 0 0 2px #111111;
+			margin-left:10%;
+			line-height:2.4em;
 		}
 	}
 
@@ -60,24 +67,7 @@
 	#block-search-form {
 		padding:5px 10px;
 		float:right;
-		input {
-			font-size:12px;
-		}
-		.form-text {
-			@include border-radius(3px);
-			background:#eee;
-			border:1px solid #fff;
-			padding:2px 5px;
-		}
-		#edit-submit {
-			@include border-radius(3px);
-			border:1px solid #fff;
-			padding:2px 10px;
-
-			&:hover {
-				background:$orange;
-			}
-		}
+		
 
 		&:after {
 			@include zen-clear();
