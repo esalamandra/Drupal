@@ -2,6 +2,7 @@ html {
 	background:url(../images/bg.jpg) center top;
 	font-family: 'Open Sans', sans-serif;
 	background-size:cover;
+	font-size:13px;
 }
 
 .edit a, .delete a {
@@ -59,6 +60,10 @@ mark.updated {
 	background:url(../images/bglogo.png);
 	background-repeat:no-repeat;
 	background-position:left 20px;
+}
+
+#content, #bottom {
+	margin-bottom:20px;
 }
 
 a {

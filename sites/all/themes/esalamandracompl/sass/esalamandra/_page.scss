@@ -49,11 +49,44 @@
 	}
 }
 
-#blog {
-	background:rgba(0,0,0,0.5);
+#partners {
+	.views-row {
+		width:46%;
+		float:left;
+		padding:5px;
+		text-align:center;
+		background:rgba(0,0,0,0.3);
+		margin-top:10px;
+	}
+	.views-row-odd {
+		margin-right:10px;
+	}
+	.views-row-last{
+
+		&:after {
+			clear:both;
+		}
+	}
+
+	.field-partner {
+		position:relative;
+		@include single-transition(all, 1s, false, false); 
+		.field-description {
+			display:none;
+
+		}
+		&:hover {
+			.field-description {
+				display:inline;
+				position:absolute;
+				top:20px;
+				left:10%;
+			}
+		}
+	}
 }
 
-#partners {
+#blog, #partners {
 	background:rgba(0,0,0,0.5);
 }
 

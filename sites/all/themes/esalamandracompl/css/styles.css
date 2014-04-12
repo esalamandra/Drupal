@@ -1934,10 +1934,6 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 #mainmenu #block-search-form:after {
   clear: left;
 }
-/* line 77, ../sass/esalamandra/_header.scss */
-#mainmenu:after {
-  background: url(../images/bgmainmenu.png);
-}
 /* line 83, ../sass/esalamandra/_header.scss */
 #mainmenu ul li a {
   text-transform: uppercase;
@@ -2017,25 +2013,98 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   color: #fa4700;
 }
 
-/* line 52, ../sass/esalamandra/_page.scss */
-#blog {
-  background: rgba(0, 0, 0, 0.5);
+/* line 53, ../sass/esalamandra/_page.scss */
+#partners .views-row {
+  width: 46%;
+  float: left;
+  padding: 5px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
 }
-
-/* line 56, ../sass/esalamandra/_page.scss */
-#partners {
-  background: rgba(0, 0, 0, 0.5);
-}
-
 /* line 61, ../sass/esalamandra/_page.scss */
+#partners .views-row-odd {
+  margin-right: 10px;
+}
+/* line 66, ../sass/esalamandra/_page.scss */
+#partners .views-row-last:after {
+  clear: both;
+}
+/* line 71, ../sass/esalamandra/_page.scss */
+#partners .field-partner {
+  position: relative;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+/* line 74, ../sass/esalamandra/_page.scss */
+#partners .field-partner .field-description {
+  display: none;
+}
+/* line 79, ../sass/esalamandra/_page.scss */
+#partners .field-partner:hover .field-description {
+  display: inline;
+  position: absolute;
+  top: 20px;
+  left: 10%;
+}
+
+/* line 89, ../sass/esalamandra/_page.scss */
+#blog, #partners {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 94, ../sass/esalamandra/_page.scss */
 #footer h3 {
   font-size: 14px;
   color: #fa4700;
 }
-/* line 65, ../sass/esalamandra/_page.scss */
+/* line 98, ../sass/esalamandra/_page.scss */
 #footer a {
   font-size: 10px;
   text-transform: uppercase;
+}
+
+/* line 1, ../sass/esalamandra/_footer.scss */
+#footer {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 4, ../sass/esalamandra/_footer.scss */
+#footer h2 {
+  color: #fa4700;
+}
+/* line 8, ../sass/esalamandra/_footer.scss */
+#footer ul {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -ms-border-radius: 4px 4px 4px 4px;
+  -o-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  list-style: none;
+}
+/* line 16, ../sass/esalamandra/_footer.scss */
+#footer ul li a {
+  font-size: 12px;
+  color: #fdfdfd;
+}
+/* line 18, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#footer ul li a:visited {
+  color: #fdfdfd;
+}
+/* line 21, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#footer ul li a:focus {
+  color: #d7d7d7;
+}
+/* line 24, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#footer ul li a:hover {
+  color: #d7d7d7;
+}
+/* line 27, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#footer ul li a:active {
+  color: #d7d7d7;
 }
 
 /* line 3, ../sass/esalamandra/_tables.scss */
@@ -2048,9 +2117,10 @@ html {
   background: url(../images/bg.jpg) center top;
   font-family: 'Open Sans', sans-serif;
   background-size: cover;
+  font-size: 13px;
 }
 
-/* line 7, ../sass/esalamandra/_base.scss */
+/* line 8, ../sass/esalamandra/_base.scss */
 .edit a, .delete a {
   padding: 2px 3px;
   background: #eee;
@@ -2073,7 +2143,7 @@ html {
   color: #0d0d0d;
 }
 
-/* line 13, ../sass/esalamandra/_base.scss */
+/* line 14, ../sass/esalamandra/_base.scss */
 input, .edit a, .delete a {
   font-size: 12px;
   -webkit-border-radius: 3px;
@@ -2084,12 +2154,12 @@ input, .edit a, .delete a {
   border: 1px solid #fff;
   padding: 2px 10px;
 }
-/* line 18, ../sass/esalamandra/_base.scss */
+/* line 19, ../sass/esalamandra/_base.scss */
 input:hover, .edit a:hover, .delete a:hover {
   background: #fa4700;
 }
 
-/* line 25, ../sass/esalamandra/_base.scss */
+/* line 26, ../sass/esalamandra/_base.scss */
 .form-text {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -2101,13 +2171,13 @@ input:hover, .edit a:hover, .delete a:hover {
   padding: 2px 5px;
 }
 
-/* line 32, ../sass/esalamandra/_base.scss */
+/* line 33, ../sass/esalamandra/_base.scss */
 tr.even, tr.odd {
   background-color: transparent !important;
   border-bottom: 1px solid #aaa !important;
 }
 
-/* line 37, ../sass/esalamandra/_base.scss */
+/* line 38, ../sass/esalamandra/_base.scss */
 mark {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -2118,33 +2188,38 @@ mark {
   padding: 2px 3px;
 }
 
-/* line 42, ../sass/esalamandra/_base.scss */
+/* line 43, ../sass/esalamandra/_base.scss */
 mark.new {
   background-color: transparent;
   color: #c00;
 }
 
-/* line 46, ../sass/esalamandra/_base.scss */
+/* line 47, ../sass/esalamandra/_base.scss */
 mark.updated {
   background-color: transparent;
   color: #ff0;
 }
 
-/* line 52, ../sass/esalamandra/_base.scss */
+/* line 53, ../sass/esalamandra/_base.scss */
 #wrapper {
   color: #fdfdfd;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 58, ../sass/esalamandra/_base.scss */
+/* line 59, ../sass/esalamandra/_base.scss */
 #header {
   background: url(../images/bglogo.png);
   background-repeat: no-repeat;
   background-position: left 20px;
 }
 
-/* line 64, ../sass/esalamandra/_base.scss */
+/* line 65, ../sass/esalamandra/_base.scss */
+#content, #bottom {
+  margin-bottom: 20px;
+}
+
+/* line 69, ../sass/esalamandra/_base.scss */
 a {
   color: #fdfdfd;
   text-decoration: none;
@@ -2166,13 +2241,13 @@ a:active {
   color: #cacaca;
 }
 
-/* line 69, ../sass/esalamandra/_base.scss */
+/* line 74, ../sass/esalamandra/_base.scss */
 h1, h2, h3, h4 {
   font-weight: 300;
   text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
 }
 
-/* line 76, ../sass/esalamandra/_base.scss */
+/* line 81, ../sass/esalamandra/_base.scss */
 h2.block__title {
   font-size: 24px;
 }
@@ -2197,20 +2272,21 @@ ul.nice-menu ul {
   padding: 0;
   margin: 0;
   border-top: 0;
+  background: none;
 }
 
-/* line 23, ../sass/esalamandra/_custom-menus.scss */
+/* line 24, ../sass/esalamandra/_custom-menus.scss */
 #wrapper ul.nice-menu li {
   background-color: transparent;
 }
 
-/* line 27, ../sass/esalamandra/_custom-menus.scss */
+/* line 28, ../sass/esalamandra/_custom-menus.scss */
 #mainmenu ul.nice-menu li a {
   font-family: 'bebas_neueregular';
   font-size: 22px;
 }
 
-/* line 33, ../sass/esalamandra/_custom-menus.scss */
+/* line 34, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu li {
   border: 0;
   border-top: 0;
@@ -2219,12 +2295,12 @@ ul.nice-menu li {
   background-color: none !important;
 }
 
-/* line 40, ../sass/esalamandra/_custom-menus.scss */
+/* line 41, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu a {
   padding: 0.3em 5px 0.3em 5px;
 }
 
-/* line 44, ../sass/esalamandra/_custom-menus.scss */
+/* line 45, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu ul {
   top: 1.8em;
   left: -1px;
@@ -2235,7 +2311,7 @@ ul.nice-menu ul {
   /* LTR */
 }
 
-/* line 52, ../sass/esalamandra/_custom-menus.scss */
+/* line 53, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu ul li {
   width: 12.5em;
 }
@@ -2244,7 +2320,7 @@ ul.nice-menu ul li {
  VERTICAL (left/right) menus
 ******************************/
 /* This is the default width of all vertical menus. */
-/* line 64, ../sass/esalamandra/_custom-menus.scss */
+/* line 65, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-right,
 ul.nice-menu-left,
 ul.nice-menu-right li,
@@ -2253,60 +2329,60 @@ ul.nice-menu-left li {
 }
 
 /* VERTICAL menus where submenus pop RIGHT (default). */
-/* line 69, ../sass/esalamandra/_custom-menus.scss */
+/* line 70, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-right ul {
   width: 12.5em;
   left: 12.5em;
   top: -1px;
 }
 
-/* line 75, ../sass/esalamandra/_custom-menus.scss */
+/* line 76, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-right ul ul {
   width: 12.5em;
   left: 12.5em;
   top: -1px;
 }
 
-/* line 82, ../sass/esalamandra/_custom-menus.scss */
+/* line 83, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-right li.menuparent,
 ul.nice-menu-right li li.menuparent {
   background: url("../images/arrow-right.png") right center no-repeat;
 }
 
-/* line 87, ../sass/esalamandra/_custom-menus.scss */
+/* line 88, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-right li.menuparent:hover,
 ul.nice-menu-right li li.menuparent:hover {
   background: url("../images/arrow-right.png") right center no-repeat;
 }
 
 /* VERTICAL menus where submenus pop LEFT. */
-/* line 92, ../sass/esalamandra/_custom-menus.scss */
+/* line 93, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-left li ul {
   width: 12.5em;
   left: -12.65em;
   top: -1px;
 }
 
-/* line 98, ../sass/esalamandra/_custom-menus.scss */
+/* line 99, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-left li ul li ul {
   width: 12.5em;
   left: -12.65em;
   top: -1px;
 }
 
-/* line 105, ../sass/esalamandra/_custom-menus.scss */
+/* line 106, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-left li.menuparent,
 ul.nice-menu-left li li.menuparent {
   background: url("../images/arrow-left.png") left center no-repeat;
 }
 
-/* line 110, ../sass/esalamandra/_custom-menus.scss */
+/* line 111, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-left li.menuparent:hover,
 ul.nice-menu-left li li.menuparent:hover {
   background: url("../images/arrow-left.png") left center no-repeat;
 }
 
-/* line 115, ../sass/esalamandra/_custom-menus.scss */
+/* line 116, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-left a,
 ul.nice-menu-left ul a {
   padding-left: 14px;
@@ -2315,66 +2391,66 @@ ul.nice-menu-left ul a {
 /******************************
  HORIZONTAL (down) menus
 ******************************/
-/* line 123, ../sass/esalamandra/_custom-menus.scss */
+/* line 124, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down {
   float: left;
   /* LTR */
   border: 0;
 }
 
-/* line 128, ../sass/esalamandra/_custom-menus.scss */
+/* line 129, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li {
   border-top: 0;
 }
 
-/* line 132, ../sass/esalamandra/_custom-menus.scss */
+/* line 133, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li li {
   border-top: 0;
 }
 
-/* line 136, ../sass/esalamandra/_custom-menus.scss */
+/* line 137, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down ul {
   left: 0;
   /* LTR */
 }
 
-/* line 140, ../sass/esalamandra/_custom-menus.scss */
+/* line 141, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down ul li {
   clear: both;
 }
 
-/* line 144, ../sass/esalamandra/_custom-menus.scss */
+/* line 145, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li ul li ul {
   left: 12.5em;
   /* LTR */
   top: -1px;
 }
 
-/* line 149, ../sass/esalamandra/_custom-menus.scss */
+/* line 150, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down .menuparent a {
   padding-right: 15px;
   /* LTR */
 }
 
-/* line 153, ../sass/esalamandra/_custom-menus.scss */
+/* line 154, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li.menuparent {
   background: url("../images/arrow-down.png") right center no-repeat;
   /* LTR */
 }
 
-/* line 157, ../sass/esalamandra/_custom-menus.scss */
+/* line 158, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li.menuparent:hover {
   background: url("../images/arrow-down.png") right center no-repeat;
   /* LTR */
 }
 
-/* line 161, ../sass/esalamandra/_custom-menus.scss */
+/* line 162, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li li.menuparent {
   background: url("../images/arrow-right.png") right center no-repeat;
   /* LTR */
 }
 
-/* line 165, ../sass/esalamandra/_custom-menus.scss */
+/* line 166, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li li.menuparent:hover {
   background: url("../images/arrow-right.png") right center no-repeat;
   /* LTR */
@@ -2386,7 +2462,7 @@ ul.nice-menu-down li li.menuparent:hover {
 /**
  * Global CSS for ALL menu types
  */
-/* line 176, ../sass/esalamandra/_custom-menus.scss */
+/* line 177, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu li {
   margin: 0;
   padding-left: 0;
@@ -2395,7 +2471,7 @@ ul.nice-menu li {
   background-color: none;
 }
 
-/* line 183, ../sass/esalamandra/_custom-menus.scss */
+/* line 184, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu li {
   margin: 0;
   /* Padding rules are needed to deal with Garland's header line-height. */
@@ -2404,7 +2480,7 @@ ul.nice-menu li {
   background: #eee;
 }
 
-/* line 191, ../sass/esalamandra/_custom-menus.scss */
+/* line 192, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu ul {
   top: 1.8em;
   left: -1px;
@@ -2415,7 +2491,7 @@ ul.nice-menu li {
   /* LTR */
 }
 
-/* line 199, ../sass/esalamandra/_custom-menus.scss */
+/* line 200, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu ul {
   top: 1.7em;
 }
@@ -2426,7 +2502,7 @@ ul.nice-menu li {
 /**
  * Global CSS for ALL menu types
  */
-/* line 210, ../sass/esalamandra/_custom-menus.scss */
+/* line 211, ../sass/esalamandra/_custom-menus.scss */
 .block ul.nice-menu,
 .block ul.nice-menu ul {
   padding: 0;
@@ -2435,32 +2511,32 @@ ul.nice-menu li {
 /**
  * HORIZONTAL (down) menus
  */
-/* line 217, ../sass/esalamandra/_custom-menus.scss */
+/* line 218, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu-down li ul li ul {
   left: 12.5em;
   /* LTR */
   top: -1px;
 }
 
-/* line 222, ../sass/esalamandra/_custom-menus.scss */
+/* line 223, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu-down li.menuparent {
   background: url("../images/arrow-down.png") right center no-repeat;
   /* LTR */
 }
 
-/* line 226, ../sass/esalamandra/_custom-menus.scss */
+/* line 227, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu-down li.menuparent:hover {
   background: url("../images/arrow-down.png") right center no-repeat;
   /* LTR */
 }
 
-/* line 230, ../sass/esalamandra/_custom-menus.scss */
+/* line 231, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu-down li li.menuparent {
   background: url("../images/arrow-right.png") right center no-repeat;
   /* LTR */
 }
 
-/* line 234, ../sass/esalamandra/_custom-menus.scss */
+/* line 235, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu-down li li.menuparent:hover {
   background: url("../images/arrow-right.png") right center no-repeat;
   /* LTR */

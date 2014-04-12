@@ -1,0 +1,22 @@
+#footer {
+	background:rgba(0,0,0,0.5);
+
+	h2 {
+		color:$orange;
+	}
+
+	ul {
+		background:rgba(0,0,0,0.5);
+		padding: 5px 10px;
+		@include border-radius(4px 4px 4px 4px);
+		list-style:none;
+
+		li {
+
+			a {
+				font-size:12px;
+				@include link-colors($sub_normal,$sub_hover,$sub_hover,$sub_normal,$sub_hover);
+			}
+		}
+	}
+}
