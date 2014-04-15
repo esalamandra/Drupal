@@ -44,6 +44,7 @@
 	}
 }
 #bottom {
+	background:rgba(0,0,0,0.5);
 	h2.block__title {
 		color: $orange;
 	}
@@ -51,6 +52,30 @@
 
 #partners {
 	.views-row {
+		width:30%;
+		float:left;
+		//padding:5px;
+		text-align:center;
+		margin-top:10px;
+
+		> .views-field {
+			padding:10px;
+		}
+	}
+
+	.field-partner{
+		.field-description {
+			display:block;
+			background:#fdfdfd;
+			padding:5px 10px;
+
+			a {
+				@include link-colors(#1b1b1b, lighten(#1b1b1b, 10), #1b1b1b, lighten(#1b1b1b,10), #1b1b1b);
+			}
+		}
+	}
+
+	/* .views-row {
 		width:46%;
 		float:left;
 		padding:5px;
@@ -70,9 +95,10 @@
 
 	.field-partner {
 		position:relative;
-		@include single-transition(all, 1s, false, false); 
+		 
 		.field-description {
 			display:none;
+			@include single-transition(all, 1s, false, false);
 
 		}
 		&:hover {
@@ -80,15 +106,12 @@
 				display:inline;
 				position:absolute;
 				top:20px;
-				left:10%;
+				left:2.5%;
 			}
 		}
-	}
+	} */
 }
 
-#blog, #partners {
-	background:rgba(0,0,0,0.5);
-}
 
 #footer {
 	h3 {

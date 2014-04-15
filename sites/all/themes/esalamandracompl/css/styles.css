@@ -2008,59 +2008,97 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   font-size: 36px;
 }
 
-/* line 47, ../sass/esalamandra/_page.scss */
+/* line 46, ../sass/esalamandra/_page.scss */
+#bottom {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 48, ../sass/esalamandra/_page.scss */
 #bottom h2.block__title {
   color: #fa4700;
 }
 
 /* line 53, ../sass/esalamandra/_page.scss */
+#partners {
+  	/* .views-row {
+  		width:46%;
+  		float:left;
+  		padding:5px;
+  		text-align:center;
+  		background:rgba(0,0,0,0.3);
+  		margin-top:10px;
+  	}
+  	.views-row-odd {
+  		margin-right:10px;
+  	}
+  	.views-row-last{
+  
+  		&:after {
+  			clear:both;
+  		}
+  	}
+  
+  	.field-partner {
+  		position:relative;
+  		 
+  		.field-description {
+  			display:none;
+  			@include single-transition(all, 1s, false, false);
+  
+  		}
+  		&:hover {
+  			.field-description {
+  				display:inline;
+  				position:absolute;
+  				top:20px;
+  				left:2.5%;
+  			}
+  		}
+  	} */
+}
+/* line 54, ../sass/esalamandra/_page.scss */
 #partners .views-row {
-  width: 46%;
+  width: 30%;
   float: left;
-  padding: 5px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.3);
   margin-top: 10px;
 }
 /* line 61, ../sass/esalamandra/_page.scss */
-#partners .views-row-odd {
-  margin-right: 10px;
+#partners .views-row > .views-field {
+  padding: 10px;
 }
-/* line 66, ../sass/esalamandra/_page.scss */
-#partners .views-row-last:after {
-  clear: both;
-}
-/* line 71, ../sass/esalamandra/_page.scss */
-#partners .field-partner {
-  position: relative;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-/* line 74, ../sass/esalamandra/_page.scss */
+/* line 67, ../sass/esalamandra/_page.scss */
 #partners .field-partner .field-description {
-  display: none;
+  display: block;
+  background: #fdfdfd;
+  padding: 5px 10px;
 }
-/* line 79, ../sass/esalamandra/_page.scss */
-#partners .field-partner:hover .field-description {
-  display: inline;
-  position: absolute;
-  top: 20px;
-  left: 10%;
+/* line 72, ../sass/esalamandra/_page.scss */
+#partners .field-partner .field-description a {
+  color: #1b1b1b;
+}
+/* line 18, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#partners .field-partner .field-description a:visited {
+  color: #353535;
+}
+/* line 21, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#partners .field-partner .field-description a:focus {
+  color: #1b1b1b;
+}
+/* line 24, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#partners .field-partner .field-description a:hover {
+  color: #353535;
+}
+/* line 27, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#partners .field-partner .field-description a:active {
+  color: #1b1b1b;
 }
 
-/* line 89, ../sass/esalamandra/_page.scss */
-#blog, #partners {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-/* line 94, ../sass/esalamandra/_page.scss */
+/* line 117, ../sass/esalamandra/_page.scss */
 #footer h3 {
   font-size: 14px;
   color: #fa4700;
 }
-/* line 98, ../sass/esalamandra/_page.scss */
+/* line 121, ../sass/esalamandra/_page.scss */
 #footer a {
   font-size: 10px;
   text-transform: uppercase;
