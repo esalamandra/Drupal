@@ -1,0 +1,74 @@
+$zen-column-count:  10;
+$zen-gutter-width:  20px;
+
+$max-width: 1200px;
+
+#header,
+#page,
+#footer {
+  max-width:$max-width;
+  margin:0 auto;
+}
+
+#header {
+  @include zen-grid-container;
+
+    #header_left {
+      @include zen-grid-item(5,1);
+    }
+    #header_social {
+      @include zen-grid-item(5,6);
+    }
+}
+
+#page {
+  @include zen-clear();
+  //@include zen-grid-container;
+  #main {
+    //@include zen-grid-container;
+  }
+
+  #top {
+    @include zen-grid-container;
+
+    #navigation {
+      @include zen-grid-item(10,1);
+    }
+
+    #top_left {
+      @include zen-clear();
+      @include zen-grid-item(6,1);
+    }
+    #top_right {
+      @include zen-grid-item(4,7);
+    }
+  }
+  #contentwrapp {
+      @include zen-clear();
+      @include zen-grid-container;
+
+      #contentx {
+        //@include zen-clear();
+        @include zen-grid-item(6,1);
+      }
+
+      #sitebar {
+        @include zen-grid-item(4,7);
+      }
+  } 
+}
+
+#footer {
+  @include zen-clear();
+  @include zen-grid-container;
+
+  #footer_left {
+    @include zen-grid-item(3,1);
+  }
+  #footer_center {
+    @include zen-grid-item(4,4);
+  }
+  #footer_right {
+    @include zen-grid-item(3,8);
+  }
+}

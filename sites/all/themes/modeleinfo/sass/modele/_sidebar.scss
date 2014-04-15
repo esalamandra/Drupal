@@ -1,0 +1,33 @@
+#sitebar {
+	h2.block__title {
+		font-weight:600;
+		font-size:18px;
+		background-color: rgb(255,255,255);
+		@include filter-gradient(#ffffff, #ffffff, vertical);
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 20%,rgba(240,239,239,1) 50%,rgba(224,224,224,1) 50%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%));
+		padding:2px 10px;
+		border-bottom: 1px solid #a8a8a8;
+		margin-bottom: 10px;
+		@include box-shadow(rgba(0,0,0,0.2) 0 0 2px);
+		@include border-radius(1px);
+
+	}
+}
+
+$light: #fdfdfd;
+$light_h: lighten($light, 30);
+
+span.field-content {
+	background-color: rgb(6,168,227);
+	@include filter-gradient(#06a8e3, #087eb4, vertical);
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(top,  rgba(6,168,227,1) 0%,rgba(8,126,180,1) 100%));
+	padding:5px 10px;
+	@include border-radius(1px);
+
+	a {
+		@include link-colors($light, $light_h, $light, $light_h,$light);
+		font-size:14px;
+	}
+}

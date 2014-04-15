@@ -1,0 +1,91 @@
+$title_n: #191919;
+$title_h: lighten($title_n, 20);
+
+
+#contentx {
+	.view-frontpage {
+
+
+		.box_up {
+			.box_date {
+				float:left; 
+				//background:#fff;
+				padding:5px 10px;
+				@include border-radius(1px);
+				background-color: rgb(55,55,55);
+				@include filter-gradient(#373737, #0e0e0e, vertical);
+				$experimental-support-for-svg: true;
+				@include background-image(linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(14,14,14,1) 100%));
+				//@include border-radius(4px 4px 0 0);
+				@include box-shadow(rgba(0,0,0,0.7) 0 0 5px inset);
+				color:#f5f5f5;
+				font-weight: 700;
+				font-size:18px;
+				text-transform:uppercase;
+				text-align:center;
+				@include text-shadow(rgba(0,0,0,0.7) -1px -1px 1px);
+				margin-bottom:10px;
+			}
+
+			.box_title {
+				float:left; 
+				margin-left: 20px;
+				font-size:18px;
+				font-weight:600;
+				text-transform:uppercase;
+
+				a {
+					@include link-colors($title_n,$title_h,$title_h,$title_n,$title_h);
+				}
+			}
+		}
+
+		.box_down {
+			p {
+				font-size: 12px;
+			}
+		}
+
+		hr.hr_class {
+			height:10px;
+			border:0;
+			clear:both;
+			background:url(../images/bgdotted.png);
+		}
+	}
+}
+
+.blog_read_more {
+	background-color: rgb(255,255,255);
+	@include filter-gradient(#ffffff, #f0efef, vertical);
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,239,239,1) 100%));
+	float:right;
+	@include border-radius(1px);
+	padding:5px 10px;
+	font-size:11px;
+	text-transform:uppercase;
+	@include box-shadow(rgba(0,0,0,0.2) 0 0 3px);
+	font-weight:700;
+
+
+	a {
+		@include link-colors($title_n,$title_h,$title_h,$title_n,$title_h);
+	}
+
+	&:after {
+		clear:both;
+	}
+
+
+}
+
+.views-view-grid {
+	width:100%;
+}
+
+ul.pager {
+	padding: 5px 10px;
+	background:#eee;
+	@include border-radius(2px);
+}

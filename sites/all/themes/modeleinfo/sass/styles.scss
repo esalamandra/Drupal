@@ -1,0 +1,90 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+@import "zen";
+@import "compass";
+/* Import Sass mixins, variables, Compass modules, etc. */
+@import "init";
+
+/* HTML element (SMACSS base) rules */
+@import "normalize";
+
+/* Layout rules */
+@import "layouts/responsive";
+
+
+ 
+/* Component (SMACSS module) rules */
+@import "components/element-invisible";
+@import "components/inline";
+
+@import "components/forms-drupal";
+@import "components/autocomplete";
+@import "components/button";
+@import "components/collapsible-fieldsets";
+@import "components/form-tables";
+@import "components/progress-bar";
+@import "components/tabledrag";
+
+@import "components/block";
+@import "components/breadcrumb";
+@import "components/comments";
+@import "components/header";
+@import "components/highlight-mark";
+@import "components/messages";
+@import "components/more-link";
+@import "components/navbar";
+@import "components/pager";
+@import "components/side-menu";
+@import "components/skip-link";
+@import "components/tabs";
+@import "components/watermark";
+@import "components/wireframes"; 
+
+@import "print";
+@import "modele/fonts";
+@import "modele/header";
+@import "modele/menu";
+@import "modele/sidebar";
+@import "modele/content";
+@import "modele/slideshow";
+@import "modele/nicemenu";
+@import "modele/footer";  
+
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */
+
+$link_normal:#00a9e7;
+$link_hover:darken($link_normal,20);
+
+a {
+	@include link-colors($link_normal,$link_hover,$link_hover,$link_normal,$link_hover);
+	text-decoration:none;
+}
+
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-color: rgb(9,58,101);
+@include filter-gradient(#093a65, #ffffff, vertical);
+$experimental-support-for-svg: true;
+@include background-image(linear-gradient(top,  rgba(9,58,101,1) 0%,rgba(9,58,101,1) 350px,rgba(255,255,255,1) 350px,rgba(255,255,255,1) 100%));
+
+}
+
+#page {
+	background:#f8f7f7;
+	@include border-radius(4px);
+	@include box-shadow(rgba(0,0,0,0.4) 0 0 5px);
+}
+
+#header {
+	min-height:150px;
+}

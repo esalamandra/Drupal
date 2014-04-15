@@ -1,0 +1,20 @@
+ul.tb-megamenu-nav {
+
+	li {
+		a {
+			min-height:55px;
+			font-weight:400;
+			text-decoration:none;
+			line-height: 3em;
+			padding: 5px 15px;
+		}
+	}
+}
+
+#navigation {
+	background-color: rgb(55,55,55);
+	@include filter-gradient(#373737, #0e0e0e, vertical);
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(14,14,14,1) 100%));
+	@include border-radius(4px 4px 0 0);
+}
