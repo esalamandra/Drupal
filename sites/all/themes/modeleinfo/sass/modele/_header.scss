@@ -13,5 +13,11 @@
 	$experimental-support-for-svg: true;
 	@include background-image(radial-gradient(100px 100px,  rgba(4,188,250,1) 0,rgba(10,55,96,0) 500px));
 	background-position: -180px;
+}
 
+.header__site-name {
+	font-family: 'Pacifico', 'cursive';
+}
+.header__logo {
+	display:none;
 }
