@@ -17,22 +17,50 @@
 	}
 }
 
-// TAGI
+// Article NODE
+// Ogolne
+#maincontent {
+	.field-type-taxonomy-term-reference {
+		background: #1b1b1b;
+		padding: 10px;
+		margin: 10px 0;
+		float: left;
+		width: 98%;
 
-.field-name-field-tags {
-	.field-items {
-		.field-item { // pojedynczy tag
-			float: left;
-			padding: 1px 5px;
-			background-color: rgb(255,255,255);
-			@include filter-gradient(#ffffff, #ededed, vertical);
-			$experimental-support-for-svg: true;
-			@include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%));
-			border-radius: 10px;
-			margin: 0 5px;
-			color: #1b1b1b;
-			font-size: 11px;
-			@include box-shadow(1px 1px 2px rgba(0,0,0,0.3));
+		&:last-child {
+			&:after {
+				@include zen-clear();
+			}
 		}
+
+		.field-label {
+			float: left;
+		}
+		.field-items {
+			float: left;
+
+			.field-item {
+				float: left;
+				padding: 1px 5px;
+				margin: 0 5px;
+				background: rgba(200, 44, 44, 1);
+				@include text-shadow(1px 1px rgba(0,0,0,0.3));
+			}
+		}
+	}
+
+	// TAGI
+
+	.field-name-field-tags {
+		.field-items {
+			.field-item { // pojedynczy tag
+				font-size: 11px;
+				@include box-shadow(1px 1px 2px rgba(0,0,0,0.3));
+			}
+		}
+	}
+
+	.field-name-field-technologia {
+
 	}
 }

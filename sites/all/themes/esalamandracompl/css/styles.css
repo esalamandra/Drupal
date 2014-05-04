@@ -2145,7 +2145,11 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   color: #d7d7d7;
 }
 
-/* line 5, ../sass/esalamandra/_tables.scss */
+/* line 2, ../sass/esalamandra/_tables.scss */
+table {
+  width: 100%;
+}
+/* line 6, ../sass/esalamandra/_tables.scss */
 table .node-author a {
   font-size: 10px;
 }
@@ -2608,22 +2612,36 @@ ul.nice-menu li {
   text-shadow: 1px 1px rgba(27, 27, 27, 0.46);
 }
 
-/* line 24, ../sass/esalamandra/_article.scss */
-.field-name-field-tags .field-items .field-item {
+/* line 23, ../sass/esalamandra/_article.scss */
+#maincontent .field-type-taxonomy-term-reference {
+  background: #1b1b1b;
+  padding: 10px;
+  margin: 10px 0;
+  float: left;
+  width: 98%;
+}
+/* line 31, ../sass/esalamandra/_article.scss */
+#maincontent .field-type-taxonomy-term-reference:last-child:after {
+  clear: left;
+}
+/* line 36, ../sass/esalamandra/_article.scss */
+#maincontent .field-type-taxonomy-term-reference .field-label {
+  float: left;
+}
+/* line 39, ../sass/esalamandra/_article.scss */
+#maincontent .field-type-taxonomy-term-reference .field-items {
+  float: left;
+}
+/* line 42, ../sass/esalamandra/_article.scss */
+#maincontent .field-type-taxonomy-term-reference .field-items .field-item {
   float: left;
   padding: 1px 5px;
-  background-color: white;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFEDEDED');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNDclIiBzdG9wLWNvbG9yPSIjZjZmNmY2Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZWRlZGVkIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(47%, #f6f6f6), color-stop(100%, #ededed));
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
-  background-image: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
-  background-image: linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
-  border-radius: 10px;
   margin: 0 5px;
-  color: #1b1b1b;
+  background: #c82c2c;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+/* line 56, ../sass/esalamandra/_article.scss */
+#maincontent .field-name-field-tags .field-items .field-item {
   font-size: 11px;
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
