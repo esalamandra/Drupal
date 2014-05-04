@@ -84,3 +84,12 @@ h2.block__title {
 
 }
 
+h2.node__title {
+	border-bottom: 1px solid #f1f1f1;
+	a {
+		padding: 5px 10px;
+		background: #1d1d1d;
+		border-radius: 2px;
+	}
+}
+
