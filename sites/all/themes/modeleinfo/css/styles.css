@@ -1806,7 +1806,7 @@ ul.tb-megamenu-nav li a {
 }
 
 /* line 2, ../sass/modele/_sidebar.scss */
-#sitebar h2.block__title {
+#sitebar h2.block__title, #sitebar .view-calendar-event-date .view-header .date-nav-wrapper .date-heading h3 {
   font-weight: 600;
   font-size: 18px;
   background-color: white;
@@ -1830,8 +1830,18 @@ ul.tb-megamenu-nav li a {
   -o-border-radius: 1px;
   border-radius: 1px;
 }
+/* line 20, ../sass/modele/_sidebar.scss */
+#sitebar .view-calendar-event-date .view-header .date-nav-wrapper .date-heading h3 {
+  padding: 2px;
+}
+/* line 33, ../sass/modele/_sidebar.scss */
+#sitebar .view-calendar-event-date .view-content .month-view table tbody tr td {
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 
-/* line 21, ../sass/modele/_sidebar.scss */
+/* line 49, ../sass/modele/_sidebar.scss */
 span.field-content {
   background-color: #06a8e3;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF06A8E3', endColorstr='#FF087EB4');
@@ -1849,7 +1859,7 @@ span.field-content {
   -o-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 29, ../sass/modele/_sidebar.scss */
+/* line 57, ../sass/modele/_sidebar.scss */
 span.field-content a {
   color: #fdfdfd;
   font-size: 14px;

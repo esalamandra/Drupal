@@ -11,7 +11,35 @@
 		margin-bottom: 10px;
 		@include box-shadow(rgba(0,0,0,0.2) 0 0 2px);
 		@include border-radius(1px);
+	}
 
+	.view-calendar-event-date {
+		.view-header {
+			.date-nav-wrapper {
+				.date-heading {
+					h3 {
+						@extend h2.block__title;
+						padding: 2px;
+					}
+				}
+			}
+		}
+
+		.view-content {
+			.month-view {
+				table {
+					tbody {
+						tr {
+							td {
+								padding: 10px 0;
+								border: 1px solid #ccc;
+								border-bottom: 1px solid rgba(0,0,0,0.2);
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
