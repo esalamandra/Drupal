@@ -12,6 +12,33 @@
 		@include box-shadow(rgba(0,0,0,0.2) 0 0 2px);
 		@include border-radius(1px);
 	}
+	 
+	.block-views-modelarze-block {
+		.view-modelarze {
+			.views-row {
+				position: relative;
+
+				.views-field-title {
+					position: absolute;
+					top: 4px;
+					left: 39%;
+					@include box-shadow(0 0 5px rgba(0,0,0,0.5));
+				}
+
+				.views-field-image {
+					text-align: center;
+				}
+
+				.views-field-body {
+					padding: 0 10px;
+				}
+
+				.views-field-view-node {
+					text-align: right;
+				}
+			}
+		}
+	}
 
 	.view-calendar-event-date {
 		.view-header {

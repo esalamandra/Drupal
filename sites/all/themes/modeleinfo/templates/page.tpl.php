@@ -56,6 +56,10 @@
     
   </div>
 
+  <div id="footer_bottom">
+    <?php print render($page['footer_bottom']); ?>
+  </div>
+
 </div>
 
 

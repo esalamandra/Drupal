@@ -73,10 +73,10 @@ html {
 
 body {
 	background-color: rgb(9,58,101);
-@include filter-gradient(#093a65, #ffffff, vertical);
-$experimental-support-for-svg: true;
-@include background-image(linear-gradient(top,  rgba(9,58,101,1) 0%,rgba(9,58,101,1) 350px,rgba(255,255,255,1) 350px,rgba(255,255,255,1) 100%));
-
+	@include filter-gradient(#093a65, #ffffff, vertical);
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(top,  rgba(9,58,101,1) 0%,rgba(9,58,101,1) 350px,rgba(255,255,255,1) 350px,rgba(255,255,255,1) 100%));
+	font-size: 14px;
 }
 
 #page {

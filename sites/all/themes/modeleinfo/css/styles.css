@@ -1911,11 +1911,11 @@ span.field-content a:active {
   float: left;
 }
 /* line 9, ../sass/modele/_content.scss */
-#navigation .block-search-form {
+#navigation #block-search-form {
   margin: 10px;
 }
 /* line 13, ../sass/modele/_content.scss */
-#navigation .block-search-form .form-item input {
+#navigation #block-search-form .form-item input {
   -webkit-border-radius: 9px;
   -moz-border-radius: 9px;
   -ms-border-radius: 9px;
@@ -1929,8 +1929,8 @@ span.field-content a:active {
   padding: 3px;
   color: #fdfdfd;
 }
-/* line 22, ../sass/modele/_content.scss */
-#navigation .block-search-form .form-item .edit-actions {
+/* line 23, ../sass/modele/_content.scss */
+#navigation #block-search-form .edit-actions {
   background: #393738;
   margin-left: 10px;
   color: #fdfdfd;
