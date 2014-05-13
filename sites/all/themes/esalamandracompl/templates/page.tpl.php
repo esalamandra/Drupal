@@ -16,9 +16,11 @@
     <div id="mainmenu">
       <?php print render($page['mainmenu']); ?>
     </div>
-    <div id="slider">
-      <?php print render($page['slider']); ?>
-    </div>
+    <?php if ($page['slider']):?>
+      <div id="slider">
+        <?php print render($page['slider']); ?>
+      </div>
+    <?php endif; ?>
   </div>
 
   <div id="page">
@@ -29,12 +31,16 @@
       <div id="maincontent">
         <?php print render($page['content']); ?>
       </div>
-      <div id="leftcontent">
-        <?php print render($page['leftcontent']); ?>
-      </div>
-      <div id="rightcontent">
-        <?php print render($page['rightcontent']); ?>
-      </div>
+      <?php if ($page['leftcontent']): ?>
+        <div id="leftcontent">
+          <?php print render($page['leftcontent']); ?>
+        </div>
+      <?php endif; ?>
+      <?php if ($page['rightcontent']): ?>
+        <div id="rightcontent">
+          <?php print render($page['rightcontent']); ?>
+        </div>
+      <?php endif; ?>
     </div>
     <div id="bottom">
       <div id="blog">
