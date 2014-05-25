@@ -587,12 +587,12 @@ table {
 #header:after {
   clear: both;
 }
-/* line 8, ../sass/layouts/_responsive.scss */
+/* line 7, ../sass/layouts/_responsive.scss */
 #header #logo {
   float: left;
-  width: 66.66667%;
+  width: 70%;
   margin-left: 0%;
-  margin-right: -66.66667%;
+  margin-right: -70%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -604,8 +604,8 @@ table {
 /* line 11, ../sass/layouts/_responsive.scss */
 #header .nested {
   float: left;
-  width: 33.33333%;
-  margin-left: 66.66667%;
+  width: 30%;
+  margin-left: 70%;
   margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -638,7 +638,7 @@ table {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 18, ../sass/layouts/_responsive.scss */
+/* line 19, ../sass/layouts/_responsive.scss */
 #header .nested #social {
   clear: left;
   float: left;
@@ -653,7 +653,7 @@ table {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 23, ../sass/layouts/_responsive.scss */
+/* line 25, ../sass/layouts/_responsive.scss */
 #header #mainmenu {
   clear: left;
   float: left;
@@ -668,7 +668,7 @@ table {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 27, ../sass/layouts/_responsive.scss */
+/* line 30, ../sass/layouts/_responsive.scss */
 #header #slider {
   clear: left;
   float: left;
@@ -693,7 +693,7 @@ table {
 #page:after {
   clear: both;
 }
-/* line 36, ../sass/layouts/_responsive.scss */
+/* line 39, ../sass/layouts/_responsive.scss */
 #page #ourportals {
   float: left;
   width: 100%;
@@ -707,7 +707,7 @@ table {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 40, ../sass/layouts/_responsive.scss */
+/* line 43, ../sass/layouts/_responsive.scss */
 #page #content {
   clear: left;
 }
@@ -720,11 +720,34 @@ table {
 #page #content:after {
   clear: both;
 }
-/* line 44, ../sass/layouts/_responsive.scss */
-#page #content #maincontent {
+/* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#page #content #middlecontent:before, #page #content #middlecontent:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+#page #content #middlecontent:after {
+  clear: both;
+}
+/* line 50, ../sass/layouts/_responsive.scss */
+#page #content #middlecontent #maincontent {
   float: left;
-  width: 100%;
+  width: 80%;
   margin-left: 0%;
+  margin-right: -80%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+/* line 54, ../sass/layouts/_responsive.scss */
+#page #content #middlecontent #sidebar-right {
+  float: left;
+  width: 20%;
+  margin-left: 80%;
   margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -734,7 +757,7 @@ table {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 47, ../sass/layouts/_responsive.scss */
+/* line 59, ../sass/layouts/_responsive.scss */
 #page #content #leftcontent {
   clear: left;
   float: left;
@@ -749,7 +772,7 @@ table {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 51, ../sass/layouts/_responsive.scss */
+/* line 64, ../sass/layouts/_responsive.scss */
 #page #content #rightcontent {
   float: left;
   width: 50%;
@@ -763,7 +786,7 @@ table {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 55, ../sass/layouts/_responsive.scss */
+/* line 69, ../sass/layouts/_responsive.scss */
 #page #bottom {
   clear: left;
 }
@@ -776,7 +799,7 @@ table {
 #page #bottom:after {
   clear: both;
 }
-/* line 59, ../sass/layouts/_responsive.scss */
+/* line 73, ../sass/layouts/_responsive.scss */
 #page #bottom #blog {
   float: left;
   width: 50%;
@@ -790,7 +813,7 @@ table {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 62, ../sass/layouts/_responsive.scss */
+/* line 77, ../sass/layouts/_responsive.scss */
 #page #bottom #partners {
   float: left;
   width: 50%;
@@ -804,7 +827,7 @@ table {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 66, ../sass/layouts/_responsive.scss */
+/* line 82, ../sass/layouts/_responsive.scss */
 #page #footer {
   clear: left;
   float: left;
@@ -820,7 +843,7 @@ table {
   word-wrap: break-word;
 }
 
-/* line 72, ../sass/layouts/_responsive.scss */
+/* line 88, ../sass/layouts/_responsive.scss */
 .row {
   clear: left;
   float: left;
@@ -836,12 +859,12 @@ table {
   word-wrap: break-word;
 }
 
-/* line 77, ../sass/layouts/_responsive.scss */
+/* line 93, ../sass/layouts/_responsive.scss */
 .one-three {
   float: left;
-  width: 33.33333%;
-  margin-left: 0%;
-  margin-right: -33.33333%;
+  width: 30%;
+  margin-left: 10%;
+  margin-right: -40%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -851,12 +874,12 @@ table {
   word-wrap: break-word;
 }
 
-/* line 80, ../sass/layouts/_responsive.scss */
+/* line 97, ../sass/layouts/_responsive.scss */
 .two-three {
   float: left;
-  width: 33.33333%;
-  margin-left: 33.33333%;
-  margin-right: -66.66667%;
+  width: 30%;
+  margin-left: 40%;
+  margin-right: -70%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -866,11 +889,11 @@ table {
   word-wrap: break-word;
 }
 
-/* line 83, ../sass/layouts/_responsive.scss */
+/* line 101, ../sass/layouts/_responsive.scss */
 .three-three {
   float: left;
-  width: 33.33333%;
-  margin-left: 66.66667%;
+  width: 30%;
+  margin-left: 70%;
   margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -1960,15 +1983,27 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 /* line 92, ../sass/esalamandra/_header.scss */
 #slider {
   height: 430px;
-  padding: 0 8% !important;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 0 2% !important;
+  margin-top: 30px;
+  margin-bottom: 70px;
 }
-/* line 100, ../sass/esalamandra/_header.scss */
-#slider .slide_wrapp .img {
-  position: relative;
+/* line 99, ../sass/esalamandra/_header.scss */
+#slider #block-views-slideshow-block {
+  height: 403px !important;
 }
 /* line 105, ../sass/esalamandra/_header.scss */
+#slider .slide_wrapp .img {
+  height: 400px;
+  position: relative;
+}
+/* line 110, ../sass/esalamandra/_header.scss */
+#slider .slide_wrapp .img img {
+  width: 100% !important;
+  -webkit-box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.8);
+  box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.8);
+}
+/* line 116, ../sass/esalamandra/_header.scss */
 #slider .slide_wrapp .slide_body {
   background: rgba(0, 0, 0, 0.7);
   padding: 10px 20px;
@@ -2062,28 +2097,55 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 #content #maincontent .node .field-name-field-icona:after {
   clear: both;
 }
-/* line 88, ../sass/esalamandra/_page.scss */
+/* line 83, ../sass/esalamandra/_page.scss */
+#content #sidebar-right {
+  background: #1b1b1b;
+}
+/* line 86, ../sass/esalamandra/_page.scss */
+#content #sidebar-right h2.block__title {
+  font-size: 20px;
+}
+/* line 94, ../sass/esalamandra/_page.scss */
+#content #sidebar-right #block-uc-cart-cart .cart-block-summary .cart-block-summary-links .links {
+  padding: 0 15%;
+}
+/* line 97, ../sass/esalamandra/_page.scss */
+#content #sidebar-right #block-uc-cart-cart .cart-block-summary .cart-block-summary-links .links li {
+  border: 0;
+  display: block;
+  text-align: center;
+  background: #e96b27;
+}
+/* line 103, ../sass/esalamandra/_page.scss */
+#content #sidebar-right #block-uc-cart-cart .cart-block-summary .cart-block-summary-links .links li a {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+/* line 108, ../sass/esalamandra/_page.scss */
+#content #sidebar-right #block-uc-cart-cart .cart-block-summary .cart-block-summary-links .links .cart-block-view-cart {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* line 123, ../sass/esalamandra/_page.scss */
 #content #leftcontent h3 a {
   font-size: 24px;
 }
-/* line 96, ../sass/esalamandra/_page.scss */
+/* line 131, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row {
   display: inline-block;
   float: left;
   margin: 10px;
   padding: 14px;
 }
-/* line 102, ../sass/esalamandra/_page.scss */
+/* line 137, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row .views-field-title {
   max-width: 160px;
 }
-/* line 105, ../sass/esalamandra/_page.scss */
+/* line 140, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row .views-field-title a {
   font-size: 13px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   font-weight: 600;
 }
-/* line 113, ../sass/esalamandra/_page.scss */
+/* line 148, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row .views-field-field-icona img {
   background: #fff;
   -webkit-border-radius: 30% 0 27% 0;
@@ -2092,32 +2154,32 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   -o-border-radius: 30% 0 27% 0;
   border-radius: 30% 0 27% 0;
 }
-/* line 122, ../sass/esalamandra/_page.scss */
+/* line 157, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row-1 .views-field-field-icona img {
   padding: 14px;
   width: 100px;
 }
-/* line 131, ../sass/esalamandra/_page.scss */
+/* line 166, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row-2 .views-field-field-icona img {
   padding: 23px;
 }
-/* line 141, ../sass/esalamandra/_page.scss */
+/* line 176, ../sass/esalamandra/_page.scss */
 #content #rightcontent h3 a {
   font-size: 36px;
 }
-/* line 147, ../sass/esalamandra/_page.scss */
+/* line 182, ../sass/esalamandra/_page.scss */
 #content #rightcontent .block-uc-catalog ul {
   list-style: none;
   font-size: 14px;
   font-weight: 600;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
-/* line 153, ../sass/esalamandra/_page.scss */
+/* line 188, ../sass/esalamandra/_page.scss */
 #content #rightcontent .block-uc-catalog ul li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
 }
-/* line 157, ../sass/esalamandra/_page.scss */
+/* line 192, ../sass/esalamandra/_page.scss */
 #content #rightcontent .block-uc-catalog ul li:before {
   content: "";
   border-top: 6px solid transparent;
@@ -2128,27 +2190,27 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   top: 4px;
 }
 
-/* line 172, ../sass/esalamandra/_page.scss */
+/* line 207, ../sass/esalamandra/_page.scss */
 #bottom {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 174, ../sass/esalamandra/_page.scss */
+/* line 209, ../sass/esalamandra/_page.scss */
 #bottom h2.block__title {
   color: #fa4700;
 }
 
-/* line 180, ../sass/esalamandra/_page.scss */
+/* line 215, ../sass/esalamandra/_page.scss */
 #partners .views-row {
   width: 30%;
   float: left;
   text-align: center;
   margin-top: 10px;
 }
-/* line 187, ../sass/esalamandra/_page.scss */
+/* line 222, ../sass/esalamandra/_page.scss */
 #partners .views-row > .views-field {
   padding: 10px;
 }
-/* line 193, ../sass/esalamandra/_page.scss */
+/* line 228, ../sass/esalamandra/_page.scss */
 #partners .field-partner .field-description {
   display: block;
   background: #fdfdfd;
@@ -2157,7 +2219,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   border-top: 5px solid #7cf20f;
   min-height: 60px;
 }
-/* line 201, ../sass/esalamandra/_page.scss */
+/* line 236, ../sass/esalamandra/_page.scss */
 #partners .field-partner .field-description a {
   color: #1b1b1b;
 }
@@ -2178,7 +2240,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   color: #1b1b1b;
 }
 
-/* line 210, ../sass/esalamandra/_page.scss */
+/* line 245, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row {
   position: relative;
   margin: 10px 0;
@@ -2190,65 +2252,65 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   min-height: 60px;
 }
-/* line 220, ../sass/esalamandra/_page.scss */
+/* line 255, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field .field-content {
   position: absolute;
 }
-/* line 226, ../sass/esalamandra/_page.scss */
+/* line 261, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-title .field-content {
   background: #c82c2c;
   padding: 5px;
   position: static;
 }
-/* line 231, ../sass/esalamandra/_page.scss */
+/* line 266, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-title .field-content a {
   font-weight: 700;
   text-shadow: 1px 1px black;
 }
-/* line 239, ../sass/esalamandra/_page.scss */
+/* line 274, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-body .field-content {
   position: static;
 }
-/* line 242, ../sass/esalamandra/_page.scss */
+/* line 277, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-body .field-content p {
   color: #cecece;
   border-bottom: 1px dashed rgba(200, 200, 200, 0.3);
   padding-bottom: 10px;
 }
-/* line 251, ../sass/esalamandra/_page.scss */
+/* line 286, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-name .field-content {
   top: 20px;
   right: 10px;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
 }
-/* line 256, ../sass/esalamandra/_page.scss */
+/* line 291, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-name .field-content a {
   font-size: 11px;
 }
-/* line 263, ../sass/esalamandra/_page.scss */
+/* line 298, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-view-node .field-content {
   bottom: 1px;
   padding: 5px;
   right: 1px;
   background: rgba(0, 255, 255, 0.1);
 }
-/* line 272, ../sass/esalamandra/_page.scss */
+/* line 307, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-created .field-content {
   top: 5px;
   right: 10px;
   font-size: 10px;
   color: #ffa500;
 }
-/* line 281, ../sass/esalamandra/_page.scss */
+/* line 316, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-timestamp .field-content {
   top: 5px;
   right: 70px;
 }
-/* line 285, ../sass/esalamandra/_page.scss */
+/* line 320, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-timestamp .field-content .updated {
   font-size: 11px;
 }
-/* line 292, ../sass/esalamandra/_page.scss */
+/* line 327, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-edit-node .field-content {
   top: 45px;
   right: 10px;
@@ -2261,17 +2323,17 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   -o-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 300, ../sass/esalamandra/_page.scss */
+/* line 335, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-edit-node .field-content a {
   color: #1b1b1b;
 }
 
-/* line 311, ../sass/esalamandra/_page.scss */
+/* line 346, ../sass/esalamandra/_page.scss */
 #footer h3 {
   font-size: 14px;
   color: #fa4700;
 }
-/* line 315, ../sass/esalamandra/_page.scss */
+/* line 350, ../sass/esalamandra/_page.scss */
 #footer a {
   font-size: 10px;
   text-transform: uppercase;

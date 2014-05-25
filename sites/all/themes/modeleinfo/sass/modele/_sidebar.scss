@@ -13,7 +13,7 @@
 		@include border-radius(1px);
 	}
 	 
-	.block-views-modelarze-block {
+	#block-views-modelarze-block {
 		.view-modelarze {
 			.views-row {
 				position: relative;
@@ -25,7 +25,7 @@
 					@include box-shadow(0 0 5px rgba(0,0,0,0.5));
 				}
 
-				.views-field-image {
+				.views-field-field-image {
 					text-align: center;
 				}
 

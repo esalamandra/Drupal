@@ -28,8 +28,13 @@
       <?php print render($page['ourportals']); ?>
     </div>
     <div id="content">
-      <div id="maincontent">
-        <?php print render($page['content']); ?>
+      <div id="middlecontent">
+        <div id="maincontent">
+          <?php print render($page['content']); ?>
+        </div>
+        <div id="sidebar-right">
+          <?php print render($page['sidebar-right']); ?>
+        </div>
       </div>
       <?php if ($page['leftcontent']): ?>
         <div id="leftcontent">

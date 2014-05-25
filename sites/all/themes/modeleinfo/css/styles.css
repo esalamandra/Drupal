@@ -1754,8 +1754,28 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 #header_social {
   margin-top: 70px;
 }
+/* line 13, ../sass/modele/_header.scss */
+#header_social #block-service-links-service-links-not-node .service-links {
+  text-align: center;
+}
+/* line 18, ../sass/modele/_header.scss */
+#header_social #block-service-links-service-links-not-node .service-links #__plusone_0 {
+  width: 70px !important;
+}
+/* line 24, ../sass/modele/_header.scss */
+#header_social #block-service-links-service-links-not-node .service-links iframe#twitter-widget-0 {
+  width: 70px !important;
+}
+/* line 30, ../sass/modele/_header.scss */
+#header_social #block-service-links-service-links-not-node .service-links iframe.service-links-facebook-like {
+  width: 70px !important;
+}
+/* line 34, ../sass/modele/_header.scss */
+#header_social #block-service-links-service-links-not-node .service-links .fb_iframe_widget {
+  line-height: 0.8em;
+}
 
-/* line 11, ../sass/modele/_header.scss */
+/* line 41, ../sass/modele/_header.scss */
 #header {
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFFFFFFF', endColorstr='#FFFFFFFF');
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjEwMHB4IiBjeT0iMTAwcHgiIHI9IjUwMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA0YmNmYSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0icmdiYSgxMCwgNTUsIDk2LCAwKSIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -1768,12 +1788,12 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   background-position: -180px;
 }
 
-/* line 18, ../sass/modele/_header.scss */
+/* line 48, ../sass/modele/_header.scss */
 .header__site-name {
   font-family: 'Pacifico', 'cursive';
 }
 
-/* line 21, ../sass/modele/_header.scss */
+/* line 51, ../sass/modele/_header.scss */
 .header__logo {
   display: none;
 }
@@ -1831,11 +1851,11 @@ ul.tb-megamenu-nav li a {
   border-radius: 1px;
 }
 /* line 18, ../sass/modele/_sidebar.scss */
-#sitebar .block-views-modelarze-block .view-modelarze .views-row {
+#sitebar #block-views-modelarze-block .view-modelarze .views-row {
   position: relative;
 }
 /* line 21, ../sass/modele/_sidebar.scss */
-#sitebar .block-views-modelarze-block .view-modelarze .views-row .views-field-title {
+#sitebar #block-views-modelarze-block .view-modelarze .views-row .views-field-title {
   position: absolute;
   top: 4px;
   left: 39%;
@@ -1844,15 +1864,15 @@ ul.tb-megamenu-nav li a {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 /* line 28, ../sass/modele/_sidebar.scss */
-#sitebar .block-views-modelarze-block .view-modelarze .views-row .views-field-image {
+#sitebar #block-views-modelarze-block .view-modelarze .views-row .views-field-field-image {
   text-align: center;
 }
 /* line 32, ../sass/modele/_sidebar.scss */
-#sitebar .block-views-modelarze-block .view-modelarze .views-row .views-field-body {
+#sitebar #block-views-modelarze-block .view-modelarze .views-row .views-field-body {
   padding: 0 10px;
 }
 /* line 36, ../sass/modele/_sidebar.scss */
-#sitebar .block-views-modelarze-block .view-modelarze .views-row .views-field-view-node {
+#sitebar #block-views-modelarze-block .view-modelarze .views-row .views-field-view-node {
   text-align: right;
 }
 /* line 47, ../sass/modele/_sidebar.scss */
@@ -1929,8 +1949,8 @@ span.field-content a:active {
   padding: 3px;
   color: #fdfdfd;
 }
-/* line 23, ../sass/modele/_content.scss */
-#navigation #block-search-form .edit-actions {
+/* line 24, ../sass/modele/_content.scss */
+#navigation #block-search-form #edit-actions input {
   background: #393738;
   margin-left: 10px;
   color: #fdfdfd;
@@ -1947,11 +1967,11 @@ span.field-content a:active {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
-/* line 39, ../sass/modele/_content.scss */
+/* line 41, ../sass/modele/_content.scss */
 #contentx .node img {
   padding: 5px 10px;
 }
-/* line 46, ../sass/modele/_content.scss */
+/* line 48, ../sass/modele/_content.scss */
 #contentx .view-frontpage .box_up .box_date {
   float: left;
   padding: 5px 10px;
@@ -1980,7 +2000,7 @@ span.field-content a:active {
   text-shadow: rgba(0, 0, 0, 0.7) -1px -1px 1px;
   margin-bottom: 10px;
 }
-/* line 66, ../sass/modele/_content.scss */
+/* line 68, ../sass/modele/_content.scss */
 #contentx .view-frontpage .box_up .box_title {
   float: left;
   margin-left: 20px;
@@ -1988,7 +2008,7 @@ span.field-content a:active {
   font-weight: 600;
   text-transform: uppercase;
 }
-/* line 73, ../sass/modele/_content.scss */
+/* line 75, ../sass/modele/_content.scss */
 #contentx .view-frontpage .box_up .box_title a {
   color: #191919;
 }
@@ -2008,11 +2028,11 @@ span.field-content a:active {
 #contentx .view-frontpage .box_up .box_title a:active {
   color: #4c4c4c;
 }
-/* line 80, ../sass/modele/_content.scss */
+/* line 82, ../sass/modele/_content.scss */
 #contentx .view-frontpage .box_down p {
   font-size: 12px;
 }
-/* line 85, ../sass/modele/_content.scss */
+/* line 87, ../sass/modele/_content.scss */
 #contentx .view-frontpage hr.hr_class {
   height: 10px;
   border: 0;
@@ -2020,7 +2040,7 @@ span.field-content a:active {
   background: url(../images/bgdotted.png);
 }
 
-/* line 94, ../sass/modele/_content.scss */
+/* line 96, ../sass/modele/_content.scss */
 .blog_read_more {
   background-color: white;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFF0EFEF');
@@ -2045,7 +2065,7 @@ span.field-content a:active {
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px;
   font-weight: 700;
 }
-/* line 108, ../sass/modele/_content.scss */
+/* line 110, ../sass/modele/_content.scss */
 .blog_read_more a {
   color: #191919;
 }
@@ -2065,17 +2085,17 @@ span.field-content a:active {
 .blog_read_more a:active {
   color: #4c4c4c;
 }
-/* line 112, ../sass/modele/_content.scss */
+/* line 114, ../sass/modele/_content.scss */
 .blog_read_more:after {
   clear: both;
 }
 
-/* line 119, ../sass/modele/_content.scss */
+/* line 121, ../sass/modele/_content.scss */
 .views-view-grid {
   width: 100%;
 }
 
-/* line 123, ../sass/modele/_content.scss */
+/* line 125, ../sass/modele/_content.scss */
 ul.pager {
   padding: 5px 10px;
   background: #eee;

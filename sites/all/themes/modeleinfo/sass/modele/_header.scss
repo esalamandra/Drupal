@@ -6,6 +6,36 @@
 
 #header_social {
 	margin-top:70px;
+	
+	//Wigdety spolecznosciowe
+
+	#block-service-links-service-links-not-node {
+		.service-links {
+			text-align: center;
+
+			// Google Plus
+
+			#__plusone_0 { 
+				width: 70px !important;
+			}
+
+			// Twitter
+
+			iframe#twitter-widget-0 {
+				width: 70px !important;
+			}
+
+			// Facebook Like 
+
+			iframe.service-links-facebook-like {
+				width: 70px !important;
+			}
+
+			.fb_iframe_widget {
+				line-height: 0.8em;
+			}
+		}
+	}
 }
 
 #header {

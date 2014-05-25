@@ -79,6 +79,41 @@
 			}
 		}
 	}
+
+	#sidebar-right {
+		background: #1b1b1b;
+
+		h2.block__title {
+			font-size: 20px;
+		}
+
+		#block-uc-cart-cart {
+
+			.cart-block-summary {
+				.cart-block-summary-links {
+					.links {
+						padding: 0 15%;
+
+						li {
+							border: 0;
+							display: block;
+							text-align: center;
+							background: rgba(233, 107, 39, 1);
+
+							a {
+								@include text-shadow(1px 1px 0 rgba(0,0,0,0.4));
+							}
+						}
+
+						.cart-block-view-cart {
+							border-bottom: 1px solid rgba(255,255,255,0.5);
+						}
+					}
+				}
+			}
+		}
+	}
+
 	#leftcontent {
 		.block__title {
 
