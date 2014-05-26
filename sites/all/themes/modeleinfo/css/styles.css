@@ -2107,43 +2107,53 @@ ul.pager {
 }
 
 /* line 1, ../sass/modele/_slideshow.scss */
+#block-views-slideshow-block {
+  margin-top: 10px;
+}
+
+/* line 5, ../sass/modele/_slideshow.scss */
 .slideshow_body {
   position: relative;
 }
-/* line 4, ../sass/modele/_slideshow.scss */
+/* line 8, ../sass/modele/_slideshow.scss */
 .slideshow_body #slideshow_body_in {
   position: absolute;
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
   bottom: 0;
 }
-/* line 10, ../sass/modele/_slideshow.scss */
+/* line 14, ../sass/modele/_slideshow.scss */
 .slideshow_body #slideshow_body_in a {
   padding: 0 20px;
   color: #f5f5f5;
 }
-/* line 15, ../sass/modele/_slideshow.scss */
+/* line 19, ../sass/modele/_slideshow.scss */
 .slideshow_body #slideshow_body_in p {
   padding: 0 20px;
   margin: 10px 0;
   color: #f5f5f5;
   font-size: 12px;
 }
-/* line 21, ../sass/modele/_slideshow.scss */
+/* line 25, ../sass/modele/_slideshow.scss */
 .slideshow_body #slideshow_body_in p a {
   padding: 0;
 }
 
-/* line 28, ../sass/modele/_slideshow.scss */
+/* line 32, ../sass/modele/_slideshow.scss */
 .views-slideshow-cycle-main-frame {
   border: 1px solid #edecec;
 }
 
-/* line 33, ../sass/modele/_slideshow.scss */
+/* line 36, ../sass/modele/_slideshow.scss */
+.views-slideshow-cycle-main-frame-row {
+  z-index: 4 !important;
+}
+
+/* line 41, ../sass/modele/_slideshow.scss */
 #views_slideshow_controls_text_slideshow-block {
   float: left;
 }
-/* line 35, ../sass/modele/_slideshow.scss */
+/* line 43, ../sass/modele/_slideshow.scss */
 #views_slideshow_controls_text_slideshow-block a {
   font-size: 12px;
   padding: 3px 10px;
@@ -2156,11 +2166,54 @@ ul.pager {
   border-radius: 3px;
 }
 
-/* line 44, ../sass/modele/_slideshow.scss */
+/* line 52, ../sass/modele/_slideshow.scss */
 #views_slideshow_slide_counter_slideshow-block {
   float: right;
   margin-right: 100px;
   font-size: 12px;
+}
+
+/* line 1, ../sass/modele/tabs.scss */
+.block_tab-titles {
+  display: none;
+}
+
+/* line 8, ../sass/modele/tabs.scss */
+.block_tab-blocks {
+  margin-top: 10px;
+}
+/* line 12, ../sass/modele/tabs.scss */
+.block_tab-blocks .item-list .quicktabs-tabs li {
+  display: inline-block !important;
+  width: 32%;
+  text-align: center;
+  padding: 5px 0;
+}
+/* line 17, ../sass/modele/tabs.scss */
+.block_tab-blocks .item-list .quicktabs-tabs li a {
+  color: #1b1b1b;
+  text-transform: uppercase;
+}
+/* line 18, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.block_tab-blocks .item-list .quicktabs-tabs li a:visited {
+  color: #1b1b1b;
+}
+/* line 21, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.block_tab-blocks .item-list .quicktabs-tabs li a:focus {
+  color: #353535;
+}
+/* line 24, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.block_tab-blocks .item-list .quicktabs-tabs li a:hover {
+  color: #353535;
+}
+/* line 27, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.block_tab-blocks .item-list .quicktabs-tabs li a:active {
+  color: #353535;
+}
+/* line 22, ../sass/modele/tabs.scss */
+.block_tab-blocks .item-list .quicktabs-tabs li.active {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /*
@@ -2591,7 +2644,7 @@ ul.nice-menu li ul li {
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
-/* line 65, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 a {
   color: #00a9e7;
   text-decoration: none;
@@ -2613,12 +2666,12 @@ a:active {
   color: #005e81;
 }
 
-/* line 70, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 html {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 74, ../sass/styles.scss */
+/* line 75, ../sass/styles.scss */
 body {
   background-color: #093a65;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF093A65', endColorstr='#FFFFFFFF');
@@ -2632,7 +2685,7 @@ body {
   font-size: 14px;
 }
 
-/* line 82, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 #page {
   background: #f8f7f7;
   -webkit-border-radius: 4px;
@@ -2645,12 +2698,12 @@ body {
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
 }
 
-/* line 88, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 #header {
   min-height: 150px;
 }
 
-/* line 92, ../sass/styles.scss */
+/* line 93, ../sass/styles.scss */
 ul.pager {
   list-style: none;
 }

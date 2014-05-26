@@ -1,0 +1,29 @@
+.block_tab-titles {
+	display: none;
+}
+
+$link-tab: #1b1b1b;
+$link-tabh: lighten($link-tab, 10);
+
+.block_tab-blocks {
+	margin-top: 10px;
+	.item-list {
+		.quicktabs-tabs {
+			li {
+				display: inline-block !important;
+				width: 32%;
+				text-align: center;
+				padding: 5px 0;
+				a {
+					@include link-colors($link-tab, $link-tabh, $link-tabh, $link-tab, $link-tabh);
+					text-transform: uppercase;
+				}
+
+				&.active {
+					background: #fff;
+					border: 1px solid rgba(0,0,0,0.3);
+				}
+			}
+		}
+	}
+}
