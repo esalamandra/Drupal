@@ -74,7 +74,6 @@ a {
 h1, h2, h3, h4 {
 	//text-transform:uppercase;
 	font-weight:300;
-	@include text-shadow(rgba(0,0,0,0.5) 1px 1px 1px);
 
 }
 
@@ -87,8 +86,7 @@ h2.block__title {
 h2.node__title {
 	border-bottom: 1px solid #f1f1f1;
 	a {
-		padding: 5px 10px;
-		background: #1d1d1d;
+		padding: 3px 10px;
 		border-radius: 2px;
 	}
 }

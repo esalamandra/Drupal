@@ -8,20 +8,24 @@
 }
 
 #content {
-	background:rgba(227,71,10,0.3);
+	background: rgba(255,255,255,0.9);
+	@include box-shadow(1px 1px 20px black);
 	p {
-		color:#f5f5f5;
+		color:$dark;
 		font-size:12px;
 	}
 
+	a {
+		@include link-colors($dark, lighten($dark, 10), $dark, lighten($dark,10), $dark);
+	}
+
 	h2.block__title {
-		color:$white;
+		color:$dark;
 		font-size:30px;
 		padding: 0 10px;
 		border-bottom: 1px solid #ef8904;
 		margin: 10px 0;
 		line-height: 1.5em;
-		background: #1b1b1b;
 		display: inline-block;
 	}
 
@@ -31,7 +35,6 @@
 				float: left;
 				padding: 10px;
 				margin: 20px;
-				@include text-shadow(1px 1px 0.4px rgba(0,0,0,0.5));
 				border-bottom: 1px solid #f1f1f1;
 				border-top: 1px solid #f1f1f1;
 				background: lightseagreen;
@@ -82,9 +85,11 @@
 
 	#sidebar-right {
 		background: #1b1b1b;
+		color: $white;
 
 		h2.block__title {
 			font-size: 20px;
+			color: $white;
 		}
 
 		#block-uc-cart-cart {
@@ -101,7 +106,6 @@
 							background: rgba(233, 107, 39, 1);
 
 							a {
-								@include text-shadow(1px 1px 0 rgba(0,0,0,0.4));
 							}
 						}
 
@@ -139,7 +143,6 @@
 
 					a {
 						font-size: 13px;
-						@include text-shadow(1px 1px 1px rgba(0,0,0,0.8));
 						font-weight: 600;
 					}
 				}
@@ -183,7 +186,6 @@
 				list-style: none;
 				font-size: 14px;
 				font-weight: 600;
-				@include text-shadow(1px 1px 1px rgba(0,0,0,0.8));
 
 				li {
 					border-bottom: 1px solid rgba(255,255,255,0.3);
@@ -265,7 +267,6 @@
 
 					a {
 						font-weight: 700;
-						@include text-shadow(1px 1px black);
 					}
 				}
 			}

@@ -2022,30 +2022,51 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 
 /* line 10, ../sass/esalamandra/_page.scss */
 #content {
-  background: rgba(227, 71, 10, 0.3);
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 1px 1px 20px black;
+  -moz-box-shadow: 1px 1px 20px black;
+  box-shadow: 1px 1px 20px black;
 }
-/* line 12, ../sass/esalamandra/_page.scss */
+/* line 13, ../sass/esalamandra/_page.scss */
 #content p {
-  color: #f5f5f5;
+  color: #1b1b1b;
   font-size: 12px;
 }
-/* line 17, ../sass/esalamandra/_page.scss */
+/* line 18, ../sass/esalamandra/_page.scss */
+#content a {
+  color: #1b1b1b;
+}
+/* line 18, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#content a:visited {
+  color: #353535;
+}
+/* line 21, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#content a:focus {
+  color: #1b1b1b;
+}
+/* line 24, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#content a:hover {
+  color: #353535;
+}
+/* line 27, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#content a:active {
+  color: #1b1b1b;
+}
+/* line 22, ../sass/esalamandra/_page.scss */
 #content h2.block__title {
-  color: #fdfdfd;
+  color: #1b1b1b;
   font-size: 30px;
   padding: 0 10px;
   border-bottom: 1px solid #ef8904;
   margin: 10px 0;
   line-height: 1.5em;
-  background: #1b1b1b;
   display: inline-block;
 }
-/* line 30, ../sass/esalamandra/_page.scss */
+/* line 34, ../sass/esalamandra/_page.scss */
 #content #maincontent .view-uc-catalog .views-row {
   float: left;
   padding: 10px;
   margin: 20px;
-  text-shadow: 1px 1px 0.4px rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid #f1f1f1;
   border-top: 1px solid #f1f1f1;
   background: lightseagreen;
@@ -2057,22 +2078,22 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 42, ../sass/esalamandra/_page.scss */
+/* line 45, ../sass/esalamandra/_page.scss */
 #content #maincontent .view-uc-catalog .views-row .views-field {
   margin-bottom: 10px;
 }
-/* line 46, ../sass/esalamandra/_page.scss */
+/* line 49, ../sass/esalamandra/_page.scss */
 #content #maincontent .view-uc-catalog .views-row .views-field-title {
   font-weight: 600;
   background: #1b1b1b;
   padding: 10px;
   border-bottom: 1px solid #f1f1f1;
 }
-/* line 53, ../sass/esalamandra/_page.scss */
+/* line 56, ../sass/esalamandra/_page.scss */
 #content #maincontent .view-uc-catalog .views-row .views-field-display-price {
   margin: 20px;
 }
-/* line 56, ../sass/esalamandra/_page.scss */
+/* line 59, ../sass/esalamandra/_page.scss */
 #content #maincontent .view-uc-catalog .views-row .views-field-display-price .uc-price {
   background: #c84a4a;
   padding: 5px 10px;
@@ -2087,65 +2108,62 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   box-shadow: 0.5px 0.5px 0.7px rgba(0, 0, 0, 0.6);
   border-top: 1px solid #f1f1f1;
 }
-/* line 70, ../sass/esalamandra/_page.scss */
+/* line 73, ../sass/esalamandra/_page.scss */
 #content #maincontent .node .field-name-field-icona img {
   float: left;
   width: 25%;
   margin-left: 38%;
 }
-/* line 76, ../sass/esalamandra/_page.scss */
+/* line 79, ../sass/esalamandra/_page.scss */
 #content #maincontent .node .field-name-field-icona:after {
   clear: both;
 }
-/* line 83, ../sass/esalamandra/_page.scss */
+/* line 86, ../sass/esalamandra/_page.scss */
 #content #sidebar-right {
   background: #1b1b1b;
+  color: #fdfdfd;
 }
-/* line 86, ../sass/esalamandra/_page.scss */
+/* line 90, ../sass/esalamandra/_page.scss */
 #content #sidebar-right h2.block__title {
   font-size: 20px;
+  color: #fdfdfd;
 }
-/* line 94, ../sass/esalamandra/_page.scss */
+/* line 99, ../sass/esalamandra/_page.scss */
 #content #sidebar-right #block-uc-cart-cart .cart-block-summary .cart-block-summary-links .links {
   padding: 0 15%;
 }
-/* line 97, ../sass/esalamandra/_page.scss */
+/* line 102, ../sass/esalamandra/_page.scss */
 #content #sidebar-right #block-uc-cart-cart .cart-block-summary .cart-block-summary-links .links li {
   border: 0;
   display: block;
   text-align: center;
   background: #e96b27;
 }
-/* line 103, ../sass/esalamandra/_page.scss */
-#content #sidebar-right #block-uc-cart-cart .cart-block-summary .cart-block-summary-links .links li a {
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
-}
-/* line 108, ../sass/esalamandra/_page.scss */
+/* line 112, ../sass/esalamandra/_page.scss */
 #content #sidebar-right #block-uc-cart-cart .cart-block-summary .cart-block-summary-links .links .cart-block-view-cart {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 123, ../sass/esalamandra/_page.scss */
+/* line 127, ../sass/esalamandra/_page.scss */
 #content #leftcontent h3 a {
   font-size: 24px;
 }
-/* line 131, ../sass/esalamandra/_page.scss */
+/* line 135, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row {
   display: inline-block;
   float: left;
   margin: 10px;
   padding: 14px;
 }
-/* line 137, ../sass/esalamandra/_page.scss */
+/* line 141, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row .views-field-title {
   max-width: 160px;
 }
-/* line 140, ../sass/esalamandra/_page.scss */
+/* line 144, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row .views-field-title a {
   font-size: 13px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   font-weight: 600;
 }
-/* line 148, ../sass/esalamandra/_page.scss */
+/* line 151, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row .views-field-field-icona img {
   background: #fff;
   -webkit-border-radius: 30% 0 27% 0;
@@ -2154,32 +2172,31 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   -o-border-radius: 30% 0 27% 0;
   border-radius: 30% 0 27% 0;
 }
-/* line 157, ../sass/esalamandra/_page.scss */
+/* line 160, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row-1 .views-field-field-icona img {
   padding: 14px;
   width: 100px;
 }
-/* line 166, ../sass/esalamandra/_page.scss */
+/* line 169, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row-2 .views-field-field-icona img {
   padding: 23px;
 }
-/* line 176, ../sass/esalamandra/_page.scss */
+/* line 179, ../sass/esalamandra/_page.scss */
 #content #rightcontent h3 a {
   font-size: 36px;
 }
-/* line 182, ../sass/esalamandra/_page.scss */
+/* line 185, ../sass/esalamandra/_page.scss */
 #content #rightcontent .block-uc-catalog ul {
   list-style: none;
   font-size: 14px;
   font-weight: 600;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
-/* line 188, ../sass/esalamandra/_page.scss */
+/* line 190, ../sass/esalamandra/_page.scss */
 #content #rightcontent .block-uc-catalog ul li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
 }
-/* line 192, ../sass/esalamandra/_page.scss */
+/* line 194, ../sass/esalamandra/_page.scss */
 #content #rightcontent .block-uc-catalog ul li:before {
   content: "";
   border-top: 6px solid transparent;
@@ -2190,27 +2207,27 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   top: 4px;
 }
 
-/* line 207, ../sass/esalamandra/_page.scss */
+/* line 209, ../sass/esalamandra/_page.scss */
 #bottom {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 209, ../sass/esalamandra/_page.scss */
+/* line 211, ../sass/esalamandra/_page.scss */
 #bottom h2.block__title {
   color: #fa4700;
 }
 
-/* line 215, ../sass/esalamandra/_page.scss */
+/* line 217, ../sass/esalamandra/_page.scss */
 #partners .views-row {
   width: 30%;
   float: left;
   text-align: center;
   margin-top: 10px;
 }
-/* line 222, ../sass/esalamandra/_page.scss */
+/* line 224, ../sass/esalamandra/_page.scss */
 #partners .views-row > .views-field {
   padding: 10px;
 }
-/* line 228, ../sass/esalamandra/_page.scss */
+/* line 230, ../sass/esalamandra/_page.scss */
 #partners .field-partner .field-description {
   display: block;
   background: #fdfdfd;
@@ -2219,7 +2236,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   border-top: 5px solid #7cf20f;
   min-height: 60px;
 }
-/* line 236, ../sass/esalamandra/_page.scss */
+/* line 238, ../sass/esalamandra/_page.scss */
 #partners .field-partner .field-description a {
   color: #1b1b1b;
 }
@@ -2240,7 +2257,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   color: #1b1b1b;
 }
 
-/* line 245, ../sass/esalamandra/_page.scss */
+/* line 247, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row {
   position: relative;
   margin: 10px 0;
@@ -2252,65 +2269,64 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   min-height: 60px;
 }
-/* line 255, ../sass/esalamandra/_page.scss */
+/* line 257, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field .field-content {
   position: absolute;
 }
-/* line 261, ../sass/esalamandra/_page.scss */
+/* line 263, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-title .field-content {
   background: #c82c2c;
   padding: 5px;
   position: static;
 }
-/* line 266, ../sass/esalamandra/_page.scss */
+/* line 268, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-title .field-content a {
   font-weight: 700;
-  text-shadow: 1px 1px black;
 }
-/* line 274, ../sass/esalamandra/_page.scss */
+/* line 275, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-body .field-content {
   position: static;
 }
-/* line 277, ../sass/esalamandra/_page.scss */
+/* line 278, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-body .field-content p {
   color: #cecece;
   border-bottom: 1px dashed rgba(200, 200, 200, 0.3);
   padding-bottom: 10px;
 }
-/* line 286, ../sass/esalamandra/_page.scss */
+/* line 287, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-name .field-content {
   top: 20px;
   right: 10px;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
 }
-/* line 291, ../sass/esalamandra/_page.scss */
+/* line 292, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-name .field-content a {
   font-size: 11px;
 }
-/* line 298, ../sass/esalamandra/_page.scss */
+/* line 299, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-view-node .field-content {
   bottom: 1px;
   padding: 5px;
   right: 1px;
   background: rgba(0, 255, 255, 0.1);
 }
-/* line 307, ../sass/esalamandra/_page.scss */
+/* line 308, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-created .field-content {
   top: 5px;
   right: 10px;
   font-size: 10px;
   color: #ffa500;
 }
-/* line 316, ../sass/esalamandra/_page.scss */
+/* line 317, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-timestamp .field-content {
   top: 5px;
   right: 70px;
 }
-/* line 320, ../sass/esalamandra/_page.scss */
+/* line 321, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-timestamp .field-content .updated {
   font-size: 11px;
 }
-/* line 327, ../sass/esalamandra/_page.scss */
+/* line 328, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-edit-node .field-content {
   top: 45px;
   right: 10px;
@@ -2323,17 +2339,17 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   -o-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 335, ../sass/esalamandra/_page.scss */
+/* line 336, ../sass/esalamandra/_page.scss */
 .region-blog .view-blog .views-row .views-field-edit-node .field-content a {
   color: #1b1b1b;
 }
 
-/* line 346, ../sass/esalamandra/_page.scss */
+/* line 347, ../sass/esalamandra/_page.scss */
 #footer h3 {
   font-size: 14px;
   color: #fa4700;
 }
-/* line 350, ../sass/esalamandra/_page.scss */
+/* line 351, ../sass/esalamandra/_page.scss */
 #footer a {
   font-size: 10px;
   text-transform: uppercase;
@@ -2521,22 +2537,20 @@ a:active {
 /* line 74, ../sass/esalamandra/_base.scss */
 h1, h2, h3, h4 {
   font-weight: 300;
-  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
 }
 
-/* line 81, ../sass/esalamandra/_base.scss */
+/* line 80, ../sass/esalamandra/_base.scss */
 h2.block__title {
   font-size: 24px;
 }
 
-/* line 87, ../sass/esalamandra/_base.scss */
+/* line 86, ../sass/esalamandra/_base.scss */
 h2.node__title {
   border-bottom: 1px solid #f1f1f1;
 }
-/* line 89, ../sass/esalamandra/_base.scss */
+/* line 88, ../sass/esalamandra/_base.scss */
 h2.node__title a {
-  padding: 5px 10px;
-  background: #1d1d1d;
+  padding: 3px 10px;
   border-radius: 2px;
 }
 
@@ -2881,4 +2895,27 @@ ul.nice-menu li {
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+/* line 69, ../sass/esalamandra/_article.scss */
+#maincontent .node .node__title a {
+  color: #4d4d4d;
+  font-weight: 600;
+  border-bottom: 1px solid seagreen;
+  font-size: 22px;
+}
+/* line 18, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#maincontent .node .node__title a:visited {
+  color: #676767;
+}
+/* line 21, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#maincontent .node .node__title a:focus {
+  color: #4d4d4d;
+}
+/* line 24, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#maincontent .node .node__title a:hover {
+  color: #676767;
+}
+/* line 27, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#maincontent .node .node__title a:active {
+  color: #4d4d4d;
 }
