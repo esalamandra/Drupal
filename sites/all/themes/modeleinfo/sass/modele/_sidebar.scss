@@ -82,7 +82,7 @@ span.field-content {
 	@include border-radius(1px);
 
 	a {
-		@include link-colors($light, $light_h, $light, $light_h,$light);
+		@include link-colors($light, $light_h, $light_h, $light,$light_h);
 		font-size:14px;
 	}
 }

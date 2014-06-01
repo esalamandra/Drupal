@@ -63,4 +63,15 @@
 	.field-name-field-technologia {
 
 	}
+
+	.node {
+		.node__title {
+			a {
+				@include link-colors(#4d4d4d, lighten(#4d4d4d, 10), #4d4d4d, lighten(#4d4d4d,10), #4d4d4d);
+				font-weight: 600;
+				border-bottom: 1px solid seagreen;
+				font-size: 22px;
+			}
+		}
+	}
 }

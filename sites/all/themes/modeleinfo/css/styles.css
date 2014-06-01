@@ -1911,11 +1911,11 @@ span.field-content a {
 }
 /* line 18, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 span.field-content a:visited {
-  color: white;
+  color: #fdfdfd;
 }
 /* line 21, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 span.field-content a:focus {
-  color: #fdfdfd;
+  color: white;
 }
 /* line 24, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 span.field-content a:hover {
@@ -1923,7 +1923,7 @@ span.field-content a:hover {
 }
 /* line 27, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 span.field-content a:active {
-  color: #fdfdfd;
+  color: white;
 }
 
 /* line 5, ../sass/modele/_content.scss */
@@ -2171,6 +2171,77 @@ ul.pager {
   float: right;
   margin-right: 100px;
   font-size: 12px;
+}
+
+/* line 59, ../sass/modele/_slideshow.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block {
+  width: 100% !important;
+}
+/* line 61, ../sass/modele/_slideshow.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row {
+  width: 100% !important;
+}
+/* line 64, ../sass/modele/_slideshow.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+/* line 70, ../sass/modele/_slideshow.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery #gallery_title a {
+  color: #1b1b1b;
+}
+/* line 18, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery #gallery_title a:visited {
+  color: #1b1b1b;
+}
+/* line 21, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery #gallery_title a:focus {
+  color: #414141;
+}
+/* line 24, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery #gallery_title a:hover {
+  color: #414141;
+}
+/* line 27, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery #gallery_title a:active {
+  color: #414141;
+}
+/* line 75, ../sass/modele/_slideshow.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery #gallery_main_image {
+  max-width: 100%;
+}
+/* line 78, ../sass/modele/_slideshow.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery #gallery_main_image img {
+  height: 170px;
+  width: auto;
+}
+/* line 84, ../sass/modele/_slideshow.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery #gallery_sub_image {
+  max-width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+/* line 88, ../sass/modele/_slideshow.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery #gallery_sub_image img {
+  width: 20%;
+  height: auto;
+  position: absolute;
+}
+/* line 93, ../sass/modele/_slideshow.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery #gallery_sub_image img:first-child {
+  top: -100px;
+  left: 20%;
+}
+/* line 98, ../sass/modele/_slideshow.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery #gallery_sub_image img:nth-child(2) {
+  top: -100px;
+  left: 42%;
+}
+/* line 103, ../sass/modele/_slideshow.scss */
+#block-views-galerie-block #views_slideshow_cycle_teaser_section_galerie-block .views-slideshow-cycle-main-frame-row #gallery #gallery_sub_image img:last-child {
+  top: -100px;
+  left: 65%;
 }
 
 /* line 1, ../sass/modele/tabs.scss */
