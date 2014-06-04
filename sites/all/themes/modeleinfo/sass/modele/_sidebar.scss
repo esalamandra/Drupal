@@ -1,3 +1,7 @@
+
+$light: #fdfdfd;
+$light_h: lighten($light, 30);
+
 #sitebar {
 	h2.block__title {
 		font-weight:600;
@@ -23,6 +27,20 @@
 					top: 4px;
 					left: 39%;
 					@include box-shadow(0 0 5px rgba(0,0,0,0.5));
+
+					.field-content {
+						background-color: rgb(6,168,227);
+						@include filter-gradient(#06a8e3, #087eb4, vertical);
+						$experimental-support-for-svg: true;
+						@include background-image(linear-gradient(top,  rgba(6,168,227,1) 0%,rgba(8,126,180,1) 100%));
+						padding:5px 10px;
+						@include border-radius(1px);
+
+						a {
+							@include link-colors($light, $light_h, $light, $light_h,$light);
+							font-size:14px;
+						}
+					}
 				}
 
 				.views-field-field-image {
@@ -68,21 +86,71 @@
 			}
 		}
 	}
+
+	#block-views-galerie-block {
+		.views-slideshow-cycle-main-frame-row {
+			max-width: 100% !important;
+			width: 100%;
+		}
+		.views-slideshow-cycle-main-frame {
+			max-width: 100% !important;
+
+			#gallery {
+				position: relative;
+				#gallery_main_image {
+					img {
+						width: 100%;
+					}
+				}
+
+				#gallery_sub_image {
+					position: absolute;
+					top: 40%;
+					background: rgba(0,0,0,0.6);
+					padding: 10px 20px;
+					border: 1px solid rgba(255,255,255,0.3);
+					max-width: 90%;
+					left: 15%;
+					img {
+						width: 95px;
+						// //position: absolute;
+						// //max-width: 100%;
+						// &:first-child {
+						// 	top: 50px;
+						// 	left: 100px;
+						// 	height: auto;
+						// }
+
+						// &:nth-child(2) {
+						// 	top: 50px;
+						// 	left: 200px;
+						// 	height: auto;
+						// }
+
+						// &:last-child {
+						// 	top: 50px;
+						// 	left: 300px;
+						// 	height: auto;
+						// }
+					}
+				}
+			}
+		}
+	}
 }
 
-$light: #fdfdfd;
-$light_h: lighten($light, 30);
+.views-field-view-node {
+	span.field-content {
+		background-color: rgb(6,168,227);
+		@include filter-gradient(#06a8e3, #087eb4, vertical);
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(top,  rgba(6,168,227,1) 0%,rgba(8,126,180,1) 100%));
+		padding:5px 10px;
+		@include border-radius(1px);
 
-span.field-content {
-	background-color: rgb(6,168,227);
-	@include filter-gradient(#06a8e3, #087eb4, vertical);
-	$experimental-support-for-svg: true;
-	@include background-image(linear-gradient(top,  rgba(6,168,227,1) 0%,rgba(8,126,180,1) 100%));
-	padding:5px 10px;
-	@include border-radius(1px);
-
-	a {
-		@include link-colors($light, $light_h, $light, $light_h,$light);
-		font-size:14px;
+		a {
+			@include link-colors($light, $light_h, $light, $light_h,$light);
+			font-size:14px;
+		}
 	}
 }

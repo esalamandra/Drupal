@@ -30,6 +30,16 @@ ul.nice-menu ul {
   font-size:22px;
 }
 
+#mainmenu ul.nice-menu li ul li {
+  background: rgba(0,0,0,0.7);
+
+  a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+}
+
 
 ul.nice-menu li {
   border: 0;

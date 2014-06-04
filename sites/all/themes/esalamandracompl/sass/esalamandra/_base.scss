@@ -80,16 +80,15 @@ h1, h2, h3, h4 {
 
 h2.block__title {
 	
-	font-size: 24px;
+	font-size: 18px;
 
 }
 
 h2.node__title {
-	border-bottom: 1px solid #f1f1f1;
 	a {
 		padding: 5px 10px;
-		background: #1d1d1d;
-		border-radius: 2px;
+		border-left: 5px solid white;
+		background: rgba(255,255,255,0.1);
 	}
 }
 

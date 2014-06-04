@@ -2,13 +2,14 @@
 //
 #ourportals {
 	h2.block__title {
-		background: rgba(0,0,0,0.5);
+		background: rgba(0,0,0,0.7);
 		color:$orange;
 	}
 }
 
 #content {
-	background:rgba(227,71,10,0.3);
+	margin-top: 25px;
+	background:rgba(0,0,0,0.7);
 	p {
 		color:#f5f5f5;
 		font-size:12px;
@@ -16,13 +17,12 @@
 
 	h2.block__title {
 		color:$white;
-		font-size:30px;
 		padding: 0 10px;
-		border-bottom: 1px solid #ef8904;
 		margin: 10px 0;
 		line-height: 1.5em;
-		background: #1b1b1b;
 		display: inline-block;
+		border-left: 5px solid white;
+		background: rgba(255,255,255,0.1);
 	}
 
 	#maincontent {
@@ -78,17 +78,79 @@
 				}
 			}
 		}
+
+		#contact-site-form {
+			label {
+				width: 25%;
+				display: inline-block !important;
+				text-align: right;
+			}
+
+			.form-textarea-wrapper {
+				display: inline-block;
+			}
+
+			.form-item-copy {
+				padding-left: 25%;
+				label {
+					width: auto;
+				}
+			}
+			#edit-actions {
+				text-align: right;
+			}
+		}
+		#webform-client-form-15 {
+			label {
+				width: 25%;
+				display: inline-block !important;
+				text-align: right;
+			}
+
+			.form-textarea-wrapper {
+				display: inline-block;
+			}
+
+			.form-item-copy {
+				padding-left: 25%;
+				label {
+					width: auto;
+				}
+			}
+			.form-actions {
+				text-align: right;
+			}
+
+			.description {
+				padding-left: 27%;
+			}
+
+			.webform-component--obsluga-powdrozeniowa {
+				padding-left: 27%;
+
+				label {
+					width: auto;
+				}
+			}
+		}
 	}
 
 	#sidebar-right {
-		background: #1b1b1b;
+		background: rgba(0,0,0,0.3);
+		border-left: 1px solid rgba(255,255,255,0.1);
+		margin-top: 20px;
+
 
 		h2.block__title {
 			font-size: 20px;
 		}
 
 		#block-uc-cart-cart {
-
+			.block__title {
+				.cart-block-title-bar {
+					padding-right: 15px !important;
+				}
+			}
 			.cart-block-summary {
 				.cart-block-summary-links {
 					.links {
@@ -205,7 +267,7 @@
 }
 
 #bottom {
-	background:rgba(0,0,0,0.5);
+	background:rgba(0,0,0,0.7F);
 	h2.block__title {
 		color: $orange;
 	}
@@ -227,10 +289,10 @@
 	.field-partner{
 		.field-description {
 			display:block;
-			background:#fdfdfd;
+			background: #fdfdfd;
 			padding:5px 10px;
 			font-weight: 600;
-			border-top: 5px solid rgba(124, 242, 15, 1);
+			border-top: 5px solid #FA4700;        //rgba(124, 242, 15, 1);//
 			min-height: 60px;
 
 			a {
@@ -245,9 +307,9 @@
 		.views-row {
 			position: relative;
 			margin: 10px 0;
-			background: #1b1b1b;
+			background: rgba(0,0,0,0.5);
 			padding: 20px 10px;
-			border-top: 5px solid #ae2626;
+			border-top: 5px solid #FA4700;
 			@include box-shadow(1px 1px 2px rgba(0,0,0,0.6));
 			min-height: 60px;
 
@@ -259,7 +321,7 @@
 
 			.views-field-title {
 				.field-content {
-					background: #c82c2c;
+					background: rgba(250,72,0,0.8);
 					padding: 5px;
 					position: static;
 
