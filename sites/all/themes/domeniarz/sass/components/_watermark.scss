@@ -35,5 +35,5 @@
 }
 .watermark__wrapper {
   // The watermark's wrapper only needs CSS for IE 6/7.
-  @extend %watermark__wrapper;
+  @extend %watermark__wrapper !optional;
 }

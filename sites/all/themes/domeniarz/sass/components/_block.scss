@@ -6,9 +6,19 @@
 /* Block wrapper. */
 .block {
   margin-bottom: rhythm(1);
+  background: #dedede;
+  border-top: 15px solid #151617;
+  @include border-radius(4px);
+  padding: 10px;
+  font-size: 14px;
+  @include box-shadow(1px 1px 0 rgba(0,0,0,0.3));
 }
 
 /* Block title. */
 .block__title {
   margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3c3c3c;
+  @include text-shadow(1px 1px 0 rgba(255,255,255,0.3));
 }

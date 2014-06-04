@@ -3,6 +3,13 @@
  * Branding header.
  */
 
+// Wrapper for top
+
+#top {
+  background: #01b3d5;
+  height: 101px;  
+}
+
 /* Wrapping link for logo. */
 .header__logo {
   float: left; /* LTR */
@@ -28,15 +35,20 @@
 
 /* The link around the name of the website. */
 .header__site-link {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 2em;
+  @include text-shadow(1px 2px 0 rgba(0,0,0,0.3));
   &:link,
   &:visited {
-    color: #000;
+    color: #fafafa;
     text-decoration: none;
   }
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    color: darken(#fafafa, 5);
+    text-decoration: none;
   }
 }
 

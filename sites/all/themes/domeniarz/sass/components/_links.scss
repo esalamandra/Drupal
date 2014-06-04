@@ -1,0 +1,21 @@
+// To change colors of links please edit init file
+.page {
+	a {
+		@include link-colors($link-normal,$link-hover,$link-hover,$link-normal,$link-hover); 
+		font-weight: 600;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+a {
+	font-weight: 600;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

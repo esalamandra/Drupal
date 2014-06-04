@@ -41,9 +41,28 @@
 @import "components/tabs";
 @import "components/watermark";
 @import "components/wireframes";
+@import "components/links";
 
 @import "print";
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
+
+// Base rules
+
+body {
+	background-color: #dadada;
+	font-size: 14px;
+}
+
+.page {
+	background-color: #fdfdfd;
+	@include box-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+// Search input bug fixed
+
+#edit-search-block-form--2 {
+	max-width: 65%;
+}

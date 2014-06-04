@@ -29,3 +29,14 @@
 .menu a.active {
   color: #000;
 }
+
+.menu__link {
+  font-size: 12px;
+  text-decoration: none;
+  @include text-shadow(1px 1px 0 rgba(255,255,255,0.34));
+  @include link-colors($link-normal, $link-hover, $link-hover, $link-normal, $link-hover);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
