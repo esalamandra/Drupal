@@ -1925,24 +1925,24 @@ ul.tb-megamenu-nav li a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 /* line 91, ../sass/modele/_sidebar.scss */
-#sitebar #block-views-galerie-block .views-slideshow-cycle-main-frame-row {
+#sitebar #block-views-galerie-block .views-slideshow-cycle-main-frame-row, #sitebar #block-views-galerie-block-1 .views-slideshow-cycle-main-frame-row {
   max-width: 100% !important;
   width: 100%;
 }
 /* line 95, ../sass/modele/_sidebar.scss */
-#sitebar #block-views-galerie-block .views-slideshow-cycle-main-frame {
+#sitebar #block-views-galerie-block .views-slideshow-cycle-main-frame, #sitebar #block-views-galerie-block-1 .views-slideshow-cycle-main-frame {
   max-width: 100% !important;
 }
 /* line 98, ../sass/modele/_sidebar.scss */
-#sitebar #block-views-galerie-block .views-slideshow-cycle-main-frame #gallery {
+#sitebar #block-views-galerie-block .views-slideshow-cycle-main-frame #gallery, #sitebar #block-views-galerie-block-1 .views-slideshow-cycle-main-frame #gallery {
   position: relative;
 }
 /* line 101, ../sass/modele/_sidebar.scss */
-#sitebar #block-views-galerie-block .views-slideshow-cycle-main-frame #gallery #gallery_main_image img {
+#sitebar #block-views-galerie-block .views-slideshow-cycle-main-frame #gallery #gallery_main_image img, #sitebar #block-views-galerie-block-1 .views-slideshow-cycle-main-frame #gallery #gallery_main_image img {
   width: 100%;
 }
 /* line 106, ../sass/modele/_sidebar.scss */
-#sitebar #block-views-galerie-block .views-slideshow-cycle-main-frame #gallery #gallery_sub_image {
+#sitebar #block-views-galerie-block .views-slideshow-cycle-main-frame #gallery #gallery_sub_image, #sitebar #block-views-galerie-block-1 .views-slideshow-cycle-main-frame #gallery #gallery_sub_image {
   position: absolute;
   top: 40%;
   background: rgba(0, 0, 0, 0.6);
@@ -1952,7 +1952,7 @@ ul.tb-megamenu-nav li a {
   left: 15%;
 }
 /* line 114, ../sass/modele/_sidebar.scss */
-#sitebar #block-views-galerie-block .views-slideshow-cycle-main-frame #gallery #gallery_sub_image img {
+#sitebar #block-views-galerie-block .views-slideshow-cycle-main-frame #gallery #gallery_sub_image img, #sitebar #block-views-galerie-block-1 .views-slideshow-cycle-main-frame #gallery #gallery_sub_image img {
   width: 95px;
 }
 
@@ -2179,51 +2179,75 @@ ul.pager {
 /* line 1, ../sass/modele/_slideshow.scss */
 #block-views-slideshow-block {
   margin-top: 10px;
+  position: relative;
+}
+/* line 5, ../sass/modele/_slideshow.scss */
+#block-views-slideshow-block .views-slideshow-pager-field-item {
+  float: left;
+  width: 10px;
+  padding: 0 6px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #000;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* line 17, ../sass/modele/_slideshow.scss */
+#block-views-slideshow-block .views-slideshow-controls-top {
+  position: absolute;
+  left: 5px;
+  bottom: 85px;
+  z-index: 999;
 }
 
-/* line 5, ../sass/modele/_slideshow.scss */
+/* line 25, ../sass/modele/_slideshow.scss */
 .slideshow_body {
   position: relative;
 }
-/* line 8, ../sass/modele/_slideshow.scss */
+/* line 28, ../sass/modele/_slideshow.scss */
 .slideshow_body #slideshow_body_in {
   position: absolute;
   width: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 7px;
 }
-/* line 14, ../sass/modele/_slideshow.scss */
+/* line 34, ../sass/modele/_slideshow.scss */
 .slideshow_body #slideshow_body_in a {
   padding: 0 20px;
   color: #f5f5f5;
 }
-/* line 19, ../sass/modele/_slideshow.scss */
+/* line 39, ../sass/modele/_slideshow.scss */
 .slideshow_body #slideshow_body_in p {
   padding: 0 20px;
   margin: 10px 0;
   color: #f5f5f5;
   font-size: 12px;
+  height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-/* line 25, ../sass/modele/_slideshow.scss */
+/* line 49, ../sass/modele/_slideshow.scss */
 .slideshow_body #slideshow_body_in p a {
   padding: 0;
 }
 
-/* line 32, ../sass/modele/_slideshow.scss */
+/* line 56, ../sass/modele/_slideshow.scss */
 .views-slideshow-cycle-main-frame {
   border: 1px solid #edecec;
 }
 
-/* line 36, ../sass/modele/_slideshow.scss */
+/* line 60, ../sass/modele/_slideshow.scss */
 .views-slideshow-cycle-main-frame-row {
   z-index: 4 !important;
 }
 
-/* line 41, ../sass/modele/_slideshow.scss */
+/* line 65, ../sass/modele/_slideshow.scss */
 #views_slideshow_controls_text_slideshow-block {
   float: left;
 }
-/* line 43, ../sass/modele/_slideshow.scss */
+/* line 67, ../sass/modele/_slideshow.scss */
 #views_slideshow_controls_text_slideshow-block a {
   font-size: 12px;
   padding: 3px 10px;
@@ -2236,52 +2260,54 @@ ul.pager {
   border-radius: 3px;
 }
 
-/* line 52, ../sass/modele/_slideshow.scss */
+/* line 76, ../sass/modele/_slideshow.scss */
 #views_slideshow_slide_counter_slideshow-block {
   float: right;
   margin-right: 100px;
   font-size: 12px;
 }
 
-/* line 1, ../sass/modele/tabs.scss */
+/* line 1, ../sass/modele/_tabs.scss */
 .block_tab-titles {
   display: none;
 }
 
-/* line 8, ../sass/modele/tabs.scss */
-.block_tab-blocks {
+/* line 8, ../sass/modele/_tabs.scss */
+#block-views-last-video-block {
   margin-top: 10px;
 }
-/* line 12, ../sass/modele/tabs.scss */
-.block_tab-blocks .item-list .quicktabs-tabs li {
+/* line 12, ../sass/modele/_tabs.scss */
+#block-views-last-video-block .item-list .quicktabs-tabs li {
   display: inline-block !important;
-  width: 32%;
+  width: 30%;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-/* line 17, ../sass/modele/tabs.scss */
-.block_tab-blocks .item-list .quicktabs-tabs li a {
+/* line 19, ../sass/modele/_tabs.scss */
+#block-views-last-video-block .item-list .quicktabs-tabs li a {
   color: #1b1b1b;
   text-transform: uppercase;
 }
 /* line 18, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.block_tab-blocks .item-list .quicktabs-tabs li a:visited {
+#block-views-last-video-block .item-list .quicktabs-tabs li a:visited {
   color: #1b1b1b;
 }
 /* line 21, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.block_tab-blocks .item-list .quicktabs-tabs li a:focus {
+#block-views-last-video-block .item-list .quicktabs-tabs li a:focus {
   color: #353535;
 }
 /* line 24, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.block_tab-blocks .item-list .quicktabs-tabs li a:hover {
+#block-views-last-video-block .item-list .quicktabs-tabs li a:hover {
   color: #353535;
 }
 /* line 27, ../../../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.block_tab-blocks .item-list .quicktabs-tabs li a:active {
+#block-views-last-video-block .item-list .quicktabs-tabs li a:active {
   color: #353535;
 }
-/* line 22, ../sass/modele/tabs.scss */
-.block_tab-blocks .item-list .quicktabs-tabs li.active {
+/* line 24, ../sass/modele/_tabs.scss */
+#block-views-last-video-block .item-list .quicktabs-tabs li.active {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }

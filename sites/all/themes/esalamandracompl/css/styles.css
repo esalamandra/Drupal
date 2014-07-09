@@ -1928,36 +1928,45 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 }
 
 /* line 50, ../sass/esalamandra/_header.scss */
+#social img {
+  margin: 0 3%;
+}
+/* line 54, ../sass/esalamandra/_header.scss */
 #social #social_content {
   background: url(../images/bgsocial.png);
   background-repeat: none;
   background-position: bottom right;
 }
 
-/* line 57, ../sass/esalamandra/_header.scss */
+/* line 61, ../sass/esalamandra/_header.scss */
 #mainmenu {
   min-height: 50px;
   background: rgba(0, 0, 0, 0.7);
   border-top: 2px solid #eee;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
-/* line 61, ../sass/esalamandra/_header.scss */
+/* line 66, ../sass/esalamandra/_header.scss */
 #mainmenu .region-mainmenu {
   padding: 5px 10px;
 }
-/* line 64, ../sass/esalamandra/_header.scss */
+/* line 69, ../sass/esalamandra/_header.scss */
 #mainmenu .block {
   margin: 0;
 }
-/* line 67, ../sass/esalamandra/_header.scss */
+/* line 72, ../sass/esalamandra/_header.scss */
 #mainmenu #block-search-form {
   padding: 5px 10px;
   float: right;
 }
-/* line 72, ../sass/esalamandra/_header.scss */
+/* line 77, ../sass/esalamandra/_header.scss */
 #mainmenu #block-search-form:after {
   clear: left;
 }
-/* line 83, ../sass/esalamandra/_header.scss */
+/* line 88, ../sass/esalamandra/_header.scss */
 #mainmenu ul li a {
   text-transform: uppercase;
   font-size: 18px;
@@ -1979,42 +1988,46 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 #mainmenu ul li a:active {
   color: #cacaca;
 }
-/* line 89, ../sass/esalamandra/_header.scss */
+/* line 94, ../sass/esalamandra/_header.scss */
 #mainmenu ul li ul {
   margin-top: 10px;
 }
-/* line 91, ../sass/esalamandra/_header.scss */
+/* line 96, ../sass/esalamandra/_header.scss */
 #mainmenu ul li ul li {
   padding: 5px 10px;
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 100, ../sass/esalamandra/_header.scss */
+/* line 105, ../sass/esalamandra/_header.scss */
 #slider {
-  height: 430px;
+  height: 460px;
   padding: 0 2% !important;
-  margin-top: 30px;
-  margin-bottom: 70px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
-/* line 107, ../sass/esalamandra/_header.scss */
+/* line 112, ../sass/esalamandra/_header.scss */
 #slider #block-views-slideshow-block {
   height: 403px !important;
 }
-/* line 113, ../sass/esalamandra/_header.scss */
+/* line 116, ../sass/esalamandra/_header.scss */
+#slider .views-slideshow-cycle-main-frame-row {
+  width: 100% !important;
+}
+/* line 122, ../sass/esalamandra/_header.scss */
 #slider .slide_wrapp .img {
   height: 400px;
   position: relative;
 }
-/* line 118, ../sass/esalamandra/_header.scss */
+/* line 127, ../sass/esalamandra/_header.scss */
 #slider .slide_wrapp .img img {
   width: 100% !important;
   -webkit-box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.8);
   box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.8);
 }
-/* line 124, ../sass/esalamandra/_header.scss */
+/* line 133, ../sass/esalamandra/_header.scss */
 #slider .slide_wrapp .slide_body {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
   padding: 15px;
   position: absolute;
   right: 0;
@@ -2024,19 +2037,19 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   height: 431px;
 }
 @media all and (max-width: 960px) {
-  /* line 124, ../sass/esalamandra/_header.scss */
+  /* line 133, ../sass/esalamandra/_header.scss */
   #slider .slide_wrapp .slide_body {
     height: auto;
   }
 }
-/* line 138, ../sass/esalamandra/_header.scss */
+/* line 147, ../sass/esalamandra/_header.scss */
 #slider .slide_wrapp .slide_body > a {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   font-size: 18px;
   text-transform: uppercase;
   color: #FA4700;
 }
-/* line 145, ../sass/esalamandra/_header.scss */
+/* line 154, ../sass/esalamandra/_header.scss */
 #slider .slide_wrapp .slide_body p {
   line-height: 24px;
 }
@@ -2051,21 +2064,21 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 #content {
   margin-top: 25px;
   background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-/* line 13, ../sass/esalamandra/_page.scss */
+/* line 14, ../sass/esalamandra/_page.scss */
 #content p {
   color: #f5f5f5;
   font-size: 12px;
 }
-/* line 18, ../sass/esalamandra/_page.scss */
+/* line 19, ../sass/esalamandra/_page.scss */
 #content h2.block__title {
   color: #fdfdfd;
   padding: 0 10px;
   margin: 10px 0;
   line-height: 1.5em;
   display: inline-block;
-  border-left: 5px solid white;
-  background: rgba(255, 255, 255, 0.1);
+  background: #FA4700;
 }
 /* line 30, ../sass/esalamandra/_page.scss */
 #content #maincontent .view-uc-catalog .views-row {
@@ -2118,123 +2131,125 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 #content #maincontent .node .field-name-field-icona img {
   float: left;
   width: 25%;
-  margin-left: 38%;
+  padding: 10px 20px;
 }
-/* line 76, ../sass/esalamandra/_page.scss */
+/* line 77, ../sass/esalamandra/_page.scss */
 #content #maincontent .node .field-name-field-icona:after {
   clear: both;
 }
-/* line 83, ../sass/esalamandra/_page.scss */
+/* line 84, ../sass/esalamandra/_page.scss */
 #content #maincontent #contact-site-form label {
   width: 25%;
   display: inline-block !important;
   text-align: right;
 }
-/* line 89, ../sass/esalamandra/_page.scss */
+/* line 90, ../sass/esalamandra/_page.scss */
 #content #maincontent #contact-site-form .form-textarea-wrapper {
   display: inline-block;
 }
-/* line 93, ../sass/esalamandra/_page.scss */
+/* line 94, ../sass/esalamandra/_page.scss */
 #content #maincontent #contact-site-form .form-item-copy {
   padding-left: 25%;
 }
-/* line 95, ../sass/esalamandra/_page.scss */
+/* line 96, ../sass/esalamandra/_page.scss */
 #content #maincontent #contact-site-form .form-item-copy label {
   width: auto;
 }
-/* line 99, ../sass/esalamandra/_page.scss */
+/* line 100, ../sass/esalamandra/_page.scss */
 #content #maincontent #contact-site-form #edit-actions {
   text-align: right;
 }
-/* line 104, ../sass/esalamandra/_page.scss */
+/* line 105, ../sass/esalamandra/_page.scss */
 #content #maincontent #webform-client-form-15 label {
   width: 25%;
   display: inline-block !important;
   text-align: right;
 }
-/* line 110, ../sass/esalamandra/_page.scss */
+/* line 111, ../sass/esalamandra/_page.scss */
 #content #maincontent #webform-client-form-15 .form-textarea-wrapper {
   display: inline-block;
 }
-/* line 114, ../sass/esalamandra/_page.scss */
+/* line 115, ../sass/esalamandra/_page.scss */
 #content #maincontent #webform-client-form-15 .form-item-copy {
   padding-left: 25%;
 }
-/* line 116, ../sass/esalamandra/_page.scss */
+/* line 117, ../sass/esalamandra/_page.scss */
 #content #maincontent #webform-client-form-15 .form-item-copy label {
   width: auto;
 }
-/* line 120, ../sass/esalamandra/_page.scss */
+/* line 121, ../sass/esalamandra/_page.scss */
 #content #maincontent #webform-client-form-15 .form-actions {
   text-align: right;
 }
-/* line 124, ../sass/esalamandra/_page.scss */
+/* line 125, ../sass/esalamandra/_page.scss */
 #content #maincontent #webform-client-form-15 .description {
   padding-left: 27%;
 }
-/* line 128, ../sass/esalamandra/_page.scss */
+/* line 129, ../sass/esalamandra/_page.scss */
 #content #maincontent #webform-client-form-15 .webform-component--obsluga-powdrozeniowa {
   padding-left: 27%;
 }
-/* line 131, ../sass/esalamandra/_page.scss */
+/* line 132, ../sass/esalamandra/_page.scss */
 #content #maincontent #webform-client-form-15 .webform-component--obsluga-powdrozeniowa label {
   width: auto;
 }
-/* line 138, ../sass/esalamandra/_page.scss */
+/* line 139, ../sass/esalamandra/_page.scss */
 #content #sidebar-right {
   background: rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   margin-top: 20px;
 }
-/* line 144, ../sass/esalamandra/_page.scss */
+/* line 147, ../sass/esalamandra/_page.scss */
 #content #sidebar-right h2.block__title {
   font-size: 20px;
 }
-/* line 150, ../sass/esalamandra/_page.scss */
+/* line 153, ../sass/esalamandra/_page.scss */
 #content #sidebar-right #block-uc-cart-cart .block__title .cart-block-title-bar {
   padding-right: 15px !important;
 }
-/* line 156, ../sass/esalamandra/_page.scss */
+/* line 159, ../sass/esalamandra/_page.scss */
 #content #sidebar-right #block-uc-cart-cart .cart-block-summary .cart-block-summary-links .links {
   padding: 0 15%;
 }
-/* line 159, ../sass/esalamandra/_page.scss */
+/* line 162, ../sass/esalamandra/_page.scss */
 #content #sidebar-right #block-uc-cart-cart .cart-block-summary .cart-block-summary-links .links li {
   border: 0;
   display: block;
   text-align: center;
   background: #e96b27;
 }
-/* line 165, ../sass/esalamandra/_page.scss */
+/* line 168, ../sass/esalamandra/_page.scss */
 #content #sidebar-right #block-uc-cart-cart .cart-block-summary .cart-block-summary-links .links li a {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
 }
-/* line 170, ../sass/esalamandra/_page.scss */
+/* line 173, ../sass/esalamandra/_page.scss */
 #content #sidebar-right #block-uc-cart-cart .cart-block-summary .cart-block-summary-links .links .cart-block-view-cart {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 185, ../sass/esalamandra/_page.scss */
+/* line 188, ../sass/esalamandra/_page.scss */
 #content #leftcontent h3 a {
   font-size: 24px;
 }
-/* line 193, ../sass/esalamandra/_page.scss */
+/* line 196, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row {
   display: inline-block;
   float: left;
   margin: 10px;
   padding: 14px;
 }
-/* line 199, ../sass/esalamandra/_page.scss */
+/* line 202, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row .views-field-title {
   max-width: 160px;
 }
-/* line 202, ../sass/esalamandra/_page.scss */
+/* line 205, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row .views-field-title a {
   font-size: 13px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   font-weight: 600;
 }
-/* line 210, ../sass/esalamandra/_page.scss */
+/* line 213, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row .views-field-field-icona img {
   background: #fff;
   -webkit-border-radius: 30% 0 27% 0;
@@ -2243,32 +2258,32 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   -o-border-radius: 30% 0 27% 0;
   border-radius: 30% 0 27% 0;
 }
-/* line 219, ../sass/esalamandra/_page.scss */
+/* line 222, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row-1 .views-field-field-icona img {
   padding: 14px;
   width: 100px;
 }
-/* line 228, ../sass/esalamandra/_page.scss */
+/* line 231, ../sass/esalamandra/_page.scss */
 #content #leftcontent .view-technologia .views-row-2 .views-field-field-icona img {
   padding: 23px;
 }
-/* line 238, ../sass/esalamandra/_page.scss */
+/* line 241, ../sass/esalamandra/_page.scss */
 #content #rightcontent h3 a {
   font-size: 36px;
 }
-/* line 244, ../sass/esalamandra/_page.scss */
+/* line 247, ../sass/esalamandra/_page.scss */
 #content #rightcontent .block-uc-catalog ul {
   list-style: none;
   font-size: 14px;
   font-weight: 600;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
-/* line 250, ../sass/esalamandra/_page.scss */
+/* line 253, ../sass/esalamandra/_page.scss */
 #content #rightcontent .block-uc-catalog ul li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
 }
-/* line 254, ../sass/esalamandra/_page.scss */
+/* line 257, ../sass/esalamandra/_page.scss */
 #content #rightcontent .block-uc-catalog ul li:before {
   content: "";
   border-top: 6px solid transparent;
@@ -2279,27 +2294,33 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   top: 4px;
 }
 
-/* line 269, ../sass/esalamandra/_page.scss */
+/* line 272, ../sass/esalamandra/_page.scss */
 #bottom {
   background: rgba(0, 0, 0, 0.7);
 }
-/* line 271, ../sass/esalamandra/_page.scss */
+/* line 274, ../sass/esalamandra/_page.scss */
 #bottom h2.block__title {
   color: #fa4700;
 }
 
-/* line 277, ../sass/esalamandra/_page.scss */
+/* line 280, ../sass/esalamandra/_page.scss */
 #partners .views-row {
   width: 30%;
   float: left;
   text-align: center;
   margin-top: 10px;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
-/* line 284, ../sass/esalamandra/_page.scss */
+/* line 289, ../sass/esalamandra/_page.scss */
 #partners .views-row > .views-field {
   padding: 10px;
 }
-/* line 290, ../sass/esalamandra/_page.scss */
+/* line 295, ../sass/esalamandra/_page.scss */
 #partners .field-partner .field-description {
   display: block;
   background: #fdfdfd;
@@ -2307,8 +2328,13 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   font-weight: 600;
   border-top: 5px solid #FA4700;
   min-height: 60px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
-/* line 298, ../sass/esalamandra/_page.scss */
+/* line 304, ../sass/esalamandra/_page.scss */
 #partners .field-partner .field-description a {
   color: #1b1b1b;
 }
@@ -2329,8 +2355,12 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   color: #1b1b1b;
 }
 
-/* line 307, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row {
+/* line 310, ../sass/esalamandra/_page.scss */
+#blog {
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+}
+/* line 314, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row {
   position: relative;
   margin: 10px 0;
   background: rgba(0, 0, 0, 0.5);
@@ -2341,66 +2371,66 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   min-height: 60px;
 }
-/* line 317, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field .field-content {
+/* line 324, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field .field-content {
   position: absolute;
 }
-/* line 323, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field-title .field-content {
+/* line 330, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field-title .field-content {
   background: rgba(250, 72, 0, 0.8);
   padding: 5px;
   position: static;
 }
-/* line 328, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field-title .field-content a {
+/* line 335, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field-title .field-content a {
   font-weight: 700;
   text-shadow: 1px 1px black;
 }
-/* line 336, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field-body .field-content {
+/* line 343, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field-body .field-content {
   position: static;
 }
-/* line 339, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field-body .field-content p {
+/* line 346, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field-body .field-content p {
   color: #cecece;
   border-bottom: 1px dashed rgba(200, 200, 200, 0.3);
   padding-bottom: 10px;
 }
-/* line 348, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field-name .field-content {
+/* line 355, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field-name .field-content {
   top: 20px;
   right: 10px;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
 }
-/* line 353, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field-name .field-content a {
+/* line 360, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field-name .field-content a {
   font-size: 11px;
 }
-/* line 360, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field-view-node .field-content {
+/* line 367, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field-view-node .field-content {
   bottom: 1px;
   padding: 5px;
   right: 1px;
   background: rgba(0, 255, 255, 0.1);
 }
-/* line 369, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field-created .field-content {
+/* line 376, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field-created .field-content {
   top: 5px;
   right: 10px;
   font-size: 10px;
   color: #ffa500;
 }
-/* line 378, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field-timestamp .field-content {
+/* line 385, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field-timestamp .field-content {
   top: 5px;
   right: 70px;
 }
-/* line 382, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field-timestamp .field-content .updated {
+/* line 389, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field-timestamp .field-content .updated {
   font-size: 11px;
 }
-/* line 389, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field-edit-node .field-content {
+/* line 396, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field-edit-node .field-content {
   top: 45px;
   right: 10px;
   font-size: 12px;
@@ -2412,17 +2442,17 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   -o-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 397, ../sass/esalamandra/_page.scss */
-.region-blog .view-blog .views-row .views-field-edit-node .field-content a {
+/* line 404, ../sass/esalamandra/_page.scss */
+#blog .region-blog .view-blog .views-row .views-field-edit-node .field-content a {
   color: #1b1b1b;
 }
 
-/* line 408, ../sass/esalamandra/_page.scss */
+/* line 416, ../sass/esalamandra/_page.scss */
 #footer h3 {
   font-size: 14px;
   color: #fa4700;
 }
-/* line 412, ../sass/esalamandra/_page.scss */
+/* line 420, ../sass/esalamandra/_page.scss */
 #footer a {
   font-size: 10px;
   text-transform: uppercase;
@@ -2630,8 +2660,9 @@ h2.block__title {
 /* line 88, ../sass/esalamandra/_base.scss */
 h2.node__title a {
   padding: 5px 10px;
-  border-left: 5px solid white;
-  background: rgba(255, 255, 255, 0.1);
+  background: #FA4700;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 /*
@@ -2667,19 +2698,29 @@ ul.nice-menu ul {
   font-family: 'bebas_neueregular';
   font-size: 22px;
 }
+/* line 32, ../sass/esalamandra/_custom-menus.scss */
+#mainmenu ul.nice-menu li a.active, #mainmenu ul.nice-menu li a:hover {
+  background: #FA4700;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
 
-/* line 33, ../sass/esalamandra/_custom-menus.scss */
+/* line 39, ../sass/esalamandra/_custom-menus.scss */
 #mainmenu ul.nice-menu li ul li {
   background: rgba(0, 0, 0, 0.7);
 }
-/* line 36, ../sass/esalamandra/_custom-menus.scss */
+/* line 42, ../sass/esalamandra/_custom-menus.scss */
 #mainmenu ul.nice-menu li ul li a {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* line 44, ../sass/esalamandra/_custom-menus.scss */
+/* line 50, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu li {
   border: 0;
   border-top: 0;
@@ -2688,12 +2729,12 @@ ul.nice-menu li {
   background-color: none !important;
 }
 
-/* line 51, ../sass/esalamandra/_custom-menus.scss */
+/* line 57, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu a {
-  padding: 0.3em 5px 0.3em 5px;
+  padding: 0.3em 10px 0.3em 10px;
 }
 
-/* line 55, ../sass/esalamandra/_custom-menus.scss */
+/* line 61, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu ul {
   top: 1.8em;
   left: -1px;
@@ -2704,7 +2745,7 @@ ul.nice-menu ul {
   /* LTR */
 }
 
-/* line 63, ../sass/esalamandra/_custom-menus.scss */
+/* line 69, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu ul li {
   width: 12.5em;
 }
@@ -2713,7 +2754,7 @@ ul.nice-menu ul li {
  VERTICAL (left/right) menus
 ******************************/
 /* This is the default width of all vertical menus. */
-/* line 75, ../sass/esalamandra/_custom-menus.scss */
+/* line 81, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-right,
 ul.nice-menu-left,
 ul.nice-menu-right li,
@@ -2722,60 +2763,60 @@ ul.nice-menu-left li {
 }
 
 /* VERTICAL menus where submenus pop RIGHT (default). */
-/* line 80, ../sass/esalamandra/_custom-menus.scss */
+/* line 86, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-right ul {
   width: 12.5em;
   left: 12.5em;
   top: -1px;
 }
 
-/* line 86, ../sass/esalamandra/_custom-menus.scss */
+/* line 92, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-right ul ul {
   width: 12.5em;
   left: 12.5em;
   top: -1px;
 }
 
-/* line 93, ../sass/esalamandra/_custom-menus.scss */
+/* line 99, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-right li.menuparent,
 ul.nice-menu-right li li.menuparent {
   background: url("../images/arrow-right.png") right center no-repeat;
 }
 
-/* line 98, ../sass/esalamandra/_custom-menus.scss */
+/* line 104, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-right li.menuparent:hover,
 ul.nice-menu-right li li.menuparent:hover {
   background: url("../images/arrow-right.png") right center no-repeat;
 }
 
 /* VERTICAL menus where submenus pop LEFT. */
-/* line 103, ../sass/esalamandra/_custom-menus.scss */
+/* line 109, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-left li ul {
   width: 12.5em;
   left: -12.65em;
   top: -1px;
 }
 
-/* line 109, ../sass/esalamandra/_custom-menus.scss */
+/* line 115, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-left li ul li ul {
   width: 12.5em;
   left: -12.65em;
   top: -1px;
 }
 
-/* line 116, ../sass/esalamandra/_custom-menus.scss */
+/* line 122, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-left li.menuparent,
 ul.nice-menu-left li li.menuparent {
   background: url("../images/arrow-left.png") left center no-repeat;
 }
 
-/* line 121, ../sass/esalamandra/_custom-menus.scss */
+/* line 127, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-left li.menuparent:hover,
 ul.nice-menu-left li li.menuparent:hover {
   background: url("../images/arrow-left.png") left center no-repeat;
 }
 
-/* line 126, ../sass/esalamandra/_custom-menus.scss */
+/* line 132, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-left a,
 ul.nice-menu-left ul a {
   padding-left: 14px;
@@ -2784,66 +2825,66 @@ ul.nice-menu-left ul a {
 /******************************
  HORIZONTAL (down) menus
 ******************************/
-/* line 134, ../sass/esalamandra/_custom-menus.scss */
+/* line 140, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down {
   float: left;
   /* LTR */
   border: 0;
 }
 
-/* line 139, ../sass/esalamandra/_custom-menus.scss */
+/* line 145, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li {
   border-top: 0;
 }
 
-/* line 143, ../sass/esalamandra/_custom-menus.scss */
+/* line 149, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li li {
   border-top: 0;
 }
 
-/* line 147, ../sass/esalamandra/_custom-menus.scss */
+/* line 153, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down ul {
   left: 0;
   /* LTR */
 }
 
-/* line 151, ../sass/esalamandra/_custom-menus.scss */
+/* line 157, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down ul li {
   clear: both;
 }
 
-/* line 155, ../sass/esalamandra/_custom-menus.scss */
+/* line 161, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li ul li ul {
   left: 12.5em;
   /* LTR */
   top: -1px;
 }
 
-/* line 160, ../sass/esalamandra/_custom-menus.scss */
+/* line 166, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down .menuparent a {
   padding-right: 15px;
   /* LTR */
 }
 
-/* line 164, ../sass/esalamandra/_custom-menus.scss */
+/* line 170, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li.menuparent {
   background: url("../images/arrow-down.png") right center no-repeat;
   /* LTR */
 }
 
-/* line 168, ../sass/esalamandra/_custom-menus.scss */
+/* line 174, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li.menuparent:hover {
   background: url("../images/arrow-down.png") right center no-repeat;
   /* LTR */
 }
 
-/* line 172, ../sass/esalamandra/_custom-menus.scss */
+/* line 178, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li li.menuparent {
   background: url("../images/arrow-right.png") right center no-repeat;
   /* LTR */
 }
 
-/* line 176, ../sass/esalamandra/_custom-menus.scss */
+/* line 182, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu-down li li.menuparent:hover {
   background: url("../images/arrow-right.png") right center no-repeat;
   /* LTR */
@@ -2855,7 +2896,7 @@ ul.nice-menu-down li li.menuparent:hover {
 /**
  * Global CSS for ALL menu types
  */
-/* line 187, ../sass/esalamandra/_custom-menus.scss */
+/* line 193, ../sass/esalamandra/_custom-menus.scss */
 ul.nice-menu li {
   margin: 0;
   padding-left: 0;
@@ -2864,7 +2905,7 @@ ul.nice-menu li {
   background-color: none;
 }
 
-/* line 194, ../sass/esalamandra/_custom-menus.scss */
+/* line 200, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu li {
   margin: 0;
   /* Padding rules are needed to deal with Garland's header line-height. */
@@ -2873,7 +2914,7 @@ ul.nice-menu li {
   background: #eee;
 }
 
-/* line 202, ../sass/esalamandra/_custom-menus.scss */
+/* line 208, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu ul {
   top: 1.8em;
   left: -1px;
@@ -2884,7 +2925,7 @@ ul.nice-menu li {
   /* LTR */
 }
 
-/* line 210, ../sass/esalamandra/_custom-menus.scss */
+/* line 216, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu ul {
   top: 1.7em;
 }
@@ -2895,7 +2936,7 @@ ul.nice-menu li {
 /**
  * Global CSS for ALL menu types
  */
-/* line 221, ../sass/esalamandra/_custom-menus.scss */
+/* line 227, ../sass/esalamandra/_custom-menus.scss */
 .block ul.nice-menu,
 .block ul.nice-menu ul {
   padding: 0;
@@ -2904,32 +2945,32 @@ ul.nice-menu li {
 /**
  * HORIZONTAL (down) menus
  */
-/* line 228, ../sass/esalamandra/_custom-menus.scss */
+/* line 234, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu-down li ul li ul {
   left: 12.5em;
   /* LTR */
   top: -1px;
 }
 
-/* line 233, ../sass/esalamandra/_custom-menus.scss */
+/* line 239, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu-down li.menuparent {
   background: url("../images/arrow-down.png") right center no-repeat;
   /* LTR */
 }
 
-/* line 237, ../sass/esalamandra/_custom-menus.scss */
+/* line 243, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu-down li.menuparent:hover {
   background: url("../images/arrow-down.png") right center no-repeat;
   /* LTR */
 }
 
-/* line 241, ../sass/esalamandra/_custom-menus.scss */
+/* line 247, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu-down li li.menuparent {
   background: url("../images/arrow-right.png") right center no-repeat;
   /* LTR */
 }
 
-/* line 245, ../sass/esalamandra/_custom-menus.scss */
+/* line 251, ../sass/esalamandra/_custom-menus.scss */
 #header-region ul.nice-menu-down li li.menuparent:hover {
   background: url("../images/arrow-right.png") right center no-repeat;
   /* LTR */

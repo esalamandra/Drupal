@@ -5,15 +5,17 @@
 $link-tab: #1b1b1b;
 $link-tabh: lighten($link-tab, 10);
 
-.block_tab-blocks {
+#block-views-last-video-block {
 	margin-top: 10px;
 	.item-list {
 		.quicktabs-tabs {
 			li {
 				display: inline-block !important;
-				width: 32%;
+				width: 30%;
 				text-align: center;
-				padding: 5px 0;
+				padding: 5px 5px;
+				overflow: hidden;
+				text-overflow: ellipsis;
 				a {
 					@include link-colors($link-tab, $link-tabh, $link-tabh, $link-tab, $link-tabh);
 					text-transform: uppercase;

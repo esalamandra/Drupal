@@ -1,0 +1,215 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* Import Sass mixins, variables, Compass modules, etc. */
+@import "init";
+
+/* HTML element (SMACSS base) rules */
+@import "normalize";
+
+/* Layout rules */
+@import "layouts/responsive";
+
+/* Component (SMACSS module) rules */
+@import "components/element-invisible";
+@import "components/inline";
+
+@import "components/forms-drupal";
+@import "components/autocomplete";
+@import "components/button";
+@import "components/collapsible-fieldsets";
+@import "components/form-tables";
+@import "components/progress-bar";
+@import "components/tabledrag";
+
+@import "components/block";
+@import "components/breadcrumb";
+@import "components/comments";
+@import "components/header";
+@import "components/highlight-mark";
+@import "components/messages";
+@import "components/more-link";
+@import "components/navbar";
+@import "components/pager";
+@import "components/side-menu";
+@import "components/skip-link";
+@import "components/tabs";
+@import "components/watermark";
+@import "components/wireframes";
+
+@import "print";
+
+@import "components/fonts";
+
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */
+
+body {
+  background: url(../images/bg.jpg) center top no-repeat #0c0c0c;
+  color: #cccccc;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+$link-normal: #fdc700;
+$link-hover: lighten($link-normal, 20);
+
+.page {
+	a {
+		@include link-colors($link-normal, $link-hover, $link-hover, $link-normal, $link-hover);
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.region-slider {
+	height: 400px;
+	background: url(../images/bgslider.png) center top no-repeat;
+	background-size: 100% 100%;
+	#block-views-slider-block {
+		.views_slideshow_cycle_main {
+			margin: 0 140px;
+			height: 240px;
+			background: rgba(0,0,0,0.4);
+			padding: 10px 20px;
+		}
+	}
+}
+
+.main-content {
+	backgrond: rgba(0,0,0,0.5);
+	padding: 20px;
+}
+
+#panels-ipe-paneid-6 {
+	.item-listy {
+		ul {
+			list-style: none;
+			li {
+				list-style: none;
+				padding: 10px 0;
+				border-bottom: 1px solid rgba(255,255,255,0.4);
+				a {
+					font-family: $open-condensed;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+
+.infopanel {
+	min-height: 300px;
+	position: relative;
+}
+
+.infopanel p {
+	color:#bd3f00;
+	font-size: 14px;
+}
+
+.infopanel h2 {
+	font-size: 30px;
+	color: #f3f3f3;
+}
+
+.infopanel .read-more {
+	text-align: right;
+}
+
+.infopanel .readmore a:link {
+	color: #c09700;
+}
+
+
+.infopanel .read-more {
+	position: absolute;
+	bottom:0;
+	right: 0;
+}
+
+#content .panels-flexible-row {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #2f2f2f;
+	margin-bottom: 20px;
+}
+
+#content .panels-ipe-portlet-content {
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.action-panel h2 {
+	font-size: 30px;
+	color: #f3f3f3;
+}
+
+.action-panel input {
+	border-radius: 4px;
+	-moz-border-radius:4px;
+	background: #28201c;
+	color: #9c9c9c;
+	border:0;
+	padding: 5px;
+	width: 100%;
+}
+
+.action-panel input[type="submit"] {
+	background: #bd3f00;
+	color: #f4f4f4;
+}
+
+.action-panel textarea {
+	background: #28201c;
+	border-radius: 4px;
+	-moz-border-radius:4px;
+	color: #9c9c9c;
+	border:0;
+	padding:5px;
+	width: 102%;
+}
+
+.action-panel .resizable-textarea .grippie {
+	background-color:#181818;
+	border:1px solid #363636;
+}
+
+.action-panel ul {
+	list-style-image: url(../images/liststyle.png); 
+	padding: 0;
+}
+
+.action-panel ul li {
+	border-bottom: 1px solid #28201c;
+	padding:10px 0;
+}
+
+.action-panel ul li a:link {
+	font-size: 20px;
+	color:#bd3f00;
+}
+
+.action-panel ul li a:hover {
+	color:#f8c301;
+}
+
+
+/* Stopka */
+
+.panel-footer {
+	text-align: center;
+}
+
+#edit-copy {
+	display: inline;
+	width: auto;
+}

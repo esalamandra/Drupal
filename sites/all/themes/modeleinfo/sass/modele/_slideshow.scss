@@ -1,5 +1,25 @@
 #block-views-slideshow-block {
 	margin-top: 10px;
+	position: relative;
+
+	.views-slideshow-pager-field-item {
+		float: left;
+		width: 10px;
+		padding: 0 6px;
+		background: rgba(255,255,255,0.5);
+		border: 1px solid rgba(255,255,255,0.8);
+		color: #000;
+		font-size: 12px;
+		cursor: pointer;
+		font-weight: bold;
+	}
+
+	.views-slideshow-controls-top {
+		position: absolute;
+		left: 5px;
+		bottom: 85px;
+		z-index: 999;
+	}
 }
 
 .slideshow_body {
@@ -8,8 +28,8 @@
 	#slideshow_body_in {
 		position:absolute;
 		width:100%;
-		background: rgba(0,0,0,0.3);
-		bottom:0;
+		background: rgba(0,0,0,0.6);
+		bottom:7px;
 
 		a {
 			padding:0 20px;
@@ -21,6 +41,10 @@
 			margin:10px 0;
 			color:#f5f5f5;
 			font-size:12px;
+			height: 25px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
 
 			a{
 				padding:0;

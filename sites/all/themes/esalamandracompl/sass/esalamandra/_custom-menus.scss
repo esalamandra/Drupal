@@ -28,6 +28,12 @@ ul.nice-menu ul {
 #mainmenu ul.nice-menu li a {
     font-family: 'bebas_neueregular';
   font-size:22px;
+
+  &.active, &:hover {
+    background: #FA4700;
+    @include border-radius(4px);
+    @include text-shadow(1px 1px 0 rgba(0,0,0,0.4));
+  }
 }
 
 #mainmenu ul.nice-menu li ul li {
@@ -49,7 +55,7 @@ ul.nice-menu li {
 }
 
 ul.nice-menu a {
-  padding: 0.3em 5px 0.3em 5px;
+  padding: 0.3em 10px 0.3em 10px;
 }
 
 ul.nice-menu ul {
