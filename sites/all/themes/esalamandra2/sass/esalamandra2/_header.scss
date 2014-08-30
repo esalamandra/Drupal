@@ -1,0 +1,40 @@
+#header {
+  min-height: 550px;
+  width: 100%;
+  background: $bg-img-header;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  #headWrapp {
+  	background: $bg-trans;
+  }
+
+  #sliderLinks {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    background: $bg-trans;
+    overflow: hidden;
+  }
+
+  #logo {
+  	height: 90px;
+  	text-align: center;
+
+  	h1 {
+  	  a {
+  	    font-size: 48px;
+  	    font-weight: 900;
+  	    margin-left: 35%;
+  	  }
+  	}
+  }
+
+  #navigation {
+  	.block {
+  		padding-left: 16%;
+  	}
+  }
+}

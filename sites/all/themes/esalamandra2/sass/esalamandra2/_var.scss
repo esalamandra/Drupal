@@ -1,0 +1,83 @@
+/* Default Imports */
+@import "compass";
+
+/* Custom Imports */
+////////////////////
+@import "animate";
+//Animation
+
+/* Backgrounds */
+  // Colors
+  $bg-trans: rgba(0,0,0,0.6);
+
+  // Images
+  $bg-img-header: url('../images/bgheader.jpg');
+  $bg-cart: url('../images/bgcart.jpg');
+
+
+/* Fonts  */
+  // Imports
+  @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,latin-ext);
+
+  // Defines
+  $roboto: 'Roboto', sans-serif;
+
+  // Choose font
+  $default-font: $roboto;
+
+/* Colors of text */
+  // Links
+  $link: #f1f1f1;
+  $link-hover: darker($link, 10);
+  // Footer Links
+  $footer-link: darker($link, 40);
+  $footer-link-hover: darker($link, 25);
+
+  $active-element: #2f9d9d; // Aktywne linki oraz inne elementy
+
+  // Kolory h2,h3 dla OFFER
+  $offer-link: #E77936;
+  $offer-link-hover: lighten($offer-link, 10);
+
+
+/* -----------  */
+
+/* Our Mixins */
+
+@mixin gradient($first, $second) {
+  background-color: $first; // Old browsers
+  @include filter-gradient($first, $second, vertical); // IE6-9
+  @include background-image(linear-gradient(top, $first 0%,$first 50%,$second 50%,$second 100%));
+}
+
+// Button Color Background
+
+@mixin button-box($radius) {
+  @include gradient(#2f9d9d, #208e8e);
+  background-repeat: repeat-x;
+  @include border-radius($radius);
+  @include box-shadow(1px 1px 2px rgba(0,0,0,0.4));
+}
+
+// Button No-Color Background
+
+@mixin read-more() {
+  @include button-box(5px);
+  @include gradient(#919191, #828282);
+  padding: 3px 5px;
+  font-weight: 800;
+  font-size: 12px;
+  @include text-shadow(1px 1px 0 rgba(0,0,0,0.3));
+}
+
+// Standard text shadow
+
+@mixin txt-shadow() {
+  @include text-shadow(1px 1px 0 rgba(0,0,0,0.3));
+}
+
+// 2 Lines 
+
+@mixin border-bottom() {
+  @include box-shadow(0 1px 0 0 rgba(151,145,135,0.3), 0 2px 0 0 rgba(0,0,0,0.45));
+}

@@ -1,0 +1,13 @@
+/* Main content styles */
+
+.views-field-addtocartlink {
+	.form-submit {
+		@include button-box(8px);
+		font-weight: 900;
+		font-size: 15px;
+		border: 0;
+		padding: 7px 10px;
+		color: #fff;
+		@include text-shadow(2px 1px 0 rgba(0,0,0,0.3));
+	}
+}

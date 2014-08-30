@@ -1,0 +1,70 @@
+html {
+	width: 100%;
+	min-height: 100%;
+	background: url('../images/page.png');
+}
+
+body {
+	width: 100%;
+	min-height: 100%;
+	color: #b1b1b1;
+	font-family: $default-font;
+	position: relative;
+	font-size: 14px;
+	background: url('../images/light.png');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* Color links */
+a {
+  @include link-colors($link, $link-hover, $link-hover, $link, $link-hover);
+  text-decoration: none;
+}
+
+.block__title {
+	@include box-shadow(0 1px 0 0 rgba(151,145,135,0.3), 0 2px 0 0 rgba(0,0,0,0.45));
+	font-weight: 200;
+	color: $link;
+}
+
+.node-readmore {
+	@include read-more();
+	padding: 2px 6px !important;
+}
+
+.view-blog {
+	.views-field-view-node {
+		span {
+			@extend .node-readmore;
+		}
+	}
+}
+
+.more-link {
+	a {
+		@extend .node-readmore;
+	}
+}
+
+input {
+	@include border-radius(4px);
+	border: 0;
+	padding: 3px 5px;
+	background: $link;
+	@include box-shadow(1px 1px 1px rgba(0,0,0,0.3));
+}
+
+.submitted {
+	font-size: 12px;
+
+	.user-picture {
+		float: left;
+		height: 30px;
+
+		img {
+			max-height: 100%;
+		}
+	}
+}

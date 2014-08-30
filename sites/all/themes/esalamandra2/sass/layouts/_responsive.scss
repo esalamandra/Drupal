@@ -1,0 +1,187 @@
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+
+// We are going to create a fluid grid with 1, 3, or 5 columns and 20px gutters
+// between columns (applied as 10px of left/right padding on each column).
+$zen-column-count:  10;
+$zen-gutter-width:  20px;
+
+// If you need IE6/7 support for box-sizing: border-box (default), see _init.scss
+//$zen-box-sizing: content-box;
+
+// You can generate more efficient CSS if you manually apply the
+// zen-grid-item-base mixin to all grid items from within a single ruleset.
+// $zen-auto-include-flow-item-base: false;
+
+// Suppress this section of CSS for RTL layouts since it contains no LTR-specific styles.
+
+/**
+ * Center the page.
+ *
+ * For screen sizes larger than 1200px, prevent excessively long lines of text
+ * by setting a max-width.
+ */
+.rowMax,
+.region-bottom {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+$zen-column-count: 10;
+
+/* Maksymalna szerokość dla treści */
+.rowMax {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#headWrapp,
+#offerCont,
+#shopping,
+#shoppingCont,
+#aboutUsCont,
+#socialCont,
+#bottomCont,
+#footerCont,
+.pageContentWrapp {
+  @include zen-grid-container;
+}
+
+#logo {
+  @include zen-grid-item(10,1);
+}
+
+#navigation {
+  @include zen-clear();
+  @include zen-grid-item(10,1);
+}
+
+#slider {
+  @include zen-clear();
+  @include zen-grid-item(10,1);
+}
+
+#sliderLinks {
+  @include zen-clear();
+  @include zen-grid-item(10,1);
+}
+
+#offerService {
+  @include zen-clear();
+  @include zen-grid-item(10,1);
+}
+
+#packets {
+  @include zen-clear();
+  @include zen-grid-item(10,1);
+}
+
+#content {
+  @include zen-clear();
+  @include zen-grid-item(10,1);
+}
+
+#shoppingCart {
+  @include zen-clear();
+  @include zen-grid-item(10,1);
+}
+
+#shoppingSteps {
+  @include zen-clear();
+  @include zen-grid-item(10,1);
+}
+
+#aboutFirst {
+  @include zen-clear();
+  @include zen-grid-item(5,1);
+}
+
+#aboutSecond {
+  @include zen-grid-item(5,6);
+}
+
+@media all and (min-width: 300px) and (max-width: 959px) {
+  #aboutFirst {
+    @include zen-clear();
+    @include zen-grid-item(10,1);
+  }
+
+  #aboutSecond {
+    @include zen-clear();
+    @include zen-grid-item(10,1);
+  }
+}
+
+#socialIcons {
+  @include zen-clear();
+  @include zen-grid-item(10,1);
+}
+
+#blog {
+  @include zen-clear();
+  @include zen-grid-item(5,1);
+}
+
+#contact {
+  @include zen-grid-item(5,6);
+}
+
+@media all and (min-width: 300px) and (max-width: 959px) {
+  #blog {
+    @include zen-clear();
+    @include zen-grid-item(10,1);
+  }
+
+  #contact {
+    @include zen-clear();
+    @include zen-grid-item(10,1);
+  }
+}
+
+#footerInfo {
+  @include zen-clear();
+  @include zen-grid-item(10,1);
+}
+
+#bottomInfo {
+  @include zen-clear();
+  @include zen-grid-item(10,1);
+}
+
+#pageContent {
+  @include zen-clear();
+  @include zen-grid-item(7,1);
+}
+
+#sidebar-right {
+  @include zen-grid-item(3,8);
+}
+
+@media all and (min-width: 300px) and (max-width: 959px) {
+  #pageContent {
+    @include zen-clear();
+    @include zen-grid-item(10,1);
+  }
+
+  #sidebar-right {
+    @include zen-clear();
+    @include zen-grid-item(10,1);
+  }
+}
+
+.pageContentWrapp {
+  @extend .rowMax;
+}
+
+#pageFullContent {
+  @include zen-clear();
+  @include zen-grid-item(10,1);
+}

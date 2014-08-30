@@ -1,0 +1,88 @@
+#headerRight {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	z-index: 5;
+
+	.block-locale {
+		h2 {
+			font-size: 14px;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			li {
+				display: inline-block;
+
+				a {
+					font-size: 14px;
+					font-weight: 800;
+
+					&.active {
+						color: $link;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (min-width: 300px) and (max-width: 959px) {
+	#headerRight {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 90%;
+
+		.block {
+			float: left;
+		}
+
+		.block-locale {
+			min-width: 90%;
+
+			h2 {
+				float: left;
+			}
+		}
+	}
+
+	#logo {
+		float: none;
+		margin-top: 100px;
+	}
+
+	ul.nice-menu li {
+		float: none;
+		display: block;
+	}
+
+	#header #navigation .block {
+		padding-left: 0;
+	}
+
+	ul.nice-menu-down {
+		float: none !important;
+	}
+
+	#header {
+		min-height: 850px;
+	}
+
+	#block-views-nasz-zespol-block .views-row {
+		max-width: 100%;
+	}
+
+	#header #logo h1 a {
+		margin-left: 0;
+	}
+}
+
+@media all and (max-width: 700px) {
+	#slider {
+		display: none;
+	}
+}

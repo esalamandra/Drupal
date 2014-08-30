@@ -1,0 +1,57 @@
+#offer {
+	/* Heading Styles */
+	h2,
+	h3 {
+		font-weight: 300;
+		color: #E77936;
+
+		a {
+			@include link-colors($offer-link, $offer-link-hover, $offer-link-hover, $offer-link, $offer-link-hover);
+		}
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	h3 {
+		font-size: 24px;
+		clear: both;
+		@include border-bottom();
+	}
+
+	article {
+		clear: both;
+	}
+
+	.block-views {
+		.views-row {
+			float: left;
+			padding: 10px 15px;
+			margin: 10px 15px;
+			min-width: 25%;
+			text-align: center;
+			.views-field-title {
+				a {
+					font-size: 18px;
+				}
+			}
+
+			.views-field-view-node {
+				margin-top: 10px;
+				span {
+					a {
+						@include read-more();
+					}
+				}
+			}
+		}
+	}
+}
+
+#packets {
+	background: rgba(0,0,0,0.2);
+	border-top: 1px solid rgba(235, 235, 235, 0.35);
+	border-bottom: 1px solid rgba(235, 235, 235, 0.35);
+	@include border-radius(5px);
+}

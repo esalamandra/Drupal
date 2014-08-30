@@ -1,0 +1,22 @@
+#shopping {
+	background: $bg-cart;
+	background-position: center;
+	background-size: cover;
+	border-top: 1px solid rgba(235,235,235,0.35);
+	border-bottom: 1px solid rgba(235,235,235,0.35);
+	padding: 0 20px;
+	margin-top: 20px;
+}
+
+
+
+.cart-block-summary-links {
+	ul.links {
+		a {
+			@include button-box(8px);
+			padding: 6px 10px;
+			font-weight: 800;
+			@include text-shadow(1px 1px 0 rgba(0,0,0,0.3));
+		}
+	}
+}

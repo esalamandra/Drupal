@@ -1,0 +1,112 @@
+/* Styles for pages */
+.pageContentWrapp {
+	margin: 20px auto;
+/* Portfolio page */
+	.view.view-zaufali-nam.view-id-zaufali_nam.view-display-id-page {
+		.views-row {
+			float: left;
+			width: 30%;
+			margin: 10px;
+
+			&:last-child {
+				&:after {
+					clear: both;
+				}
+			}
+
+			img {
+				@include box-shadow(2px 3px 5px rgba(0,0,0,0.4));
+				@include border-radius(3px);
+			}
+
+			.field-description {
+				a {
+					font-size: 13px;
+					font-weight: 400;
+					display: block;
+					text-align: center;
+					@include border-bottom();
+				}
+			}
+		}
+
+		.more-link {
+			clear: both;
+		}
+	}
+
+	/* Views - Blog */
+
+	.view-display-id-page {
+		.views-row {
+			margin: 0 0 10px 0;
+			@include border-bottom();
+			min-height: 180px;
+			padding-bottom: 10px;
+		}
+		.views-field-field-image {
+			width: 20%;
+			float: left;
+			margin: 0 30px 20px;
+
+			img {
+				@include border-radius(5px);
+				@include box-shadow(2px 3px 4px rgba(0,0,0,0.5));
+			}
+		}
+
+		.views-field-title {
+			@include border-bottom();
+			font-weight: 300;
+			font-size: 32px;
+		}
+
+		.views-field-name {
+			float: left;
+			margin: 0 10px;
+		}
+
+		.views-field-created {
+			float: left;
+			margin: 0 10px;
+		}
+
+		.views-field-view-node {
+			float: right;
+		}
+	}
+
+	/* WebForms */
+
+	.webform-client-form {
+		label {
+			display: block;
+		}
+
+		.form-type-radio {
+			label {
+				display: inline;
+			}
+		}
+
+		.form-file {
+			margin-right: 10px;
+		}
+	}
+
+	/* Article: Submitted */
+	.submitted {
+		font-size: 12px;
+
+		.user-picture {
+			float: left;
+			height: 30px;
+
+			img {
+				max-height: 100%;
+			}
+		}
+	}
+
+/* End of code */
+}

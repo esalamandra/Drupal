@@ -60,6 +60,9 @@ body {
 $link-normal: #fdc700;
 $link-hover: lighten($link-normal, 20);
 
+$link-w-normal: #f3f3f3;
+$link-w-hover: lighten($link-w-normal, 20);
+
 .page {
 	a {
 		@include link-colors($link-normal, $link-hover, $link-hover, $link-normal, $link-hover);
@@ -75,12 +78,30 @@ $link-hover: lighten($link-normal, 20);
 	height: 400px;
 	background: url(../images/bgslider.png) center top no-repeat;
 	background-size: 100% 100%;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align: center;
 	#block-views-slider-block {
 		.views_slideshow_cycle_main {
 			margin: 0 140px;
 			height: 240px;
 			background: rgba(0,0,0,0.4);
-			padding: 10px 20px;
+			padding: 30px 20px;
+			position: relative;
+		}
+
+		.views-field-title {
+			font-size: 60px;
+			font-family: $open-condensed;
+			line-height: 1.2em;
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			@include text-shadow(1px 1px 0 rgba(0,0,0,0.7));
+		}
+
+		.views-row {
+			width: 100% important;
 		}
 	}
 }
@@ -88,6 +109,10 @@ $link-hover: lighten($link-normal, 20);
 .main-content {
 	backgrond: rgba(0,0,0,0.5);
 	padding: 20px;
+
+	img {
+		width: 100% !important;
+	}
 }
 
 #panels-ipe-paneid-6 {
@@ -138,6 +163,10 @@ $link-hover: lighten($link-normal, 20);
 	right: 0;
 }
 
+.infopanel img {
+	width: 100% !important;
+}
+
 #content .panels-flexible-row {
 	padding-bottom: 20px;
 	border-bottom: 1px solid #2f2f2f;
@@ -184,7 +213,7 @@ $link-hover: lighten($link-normal, 20);
 }
 
 .action-panel ul {
-	list-style-image: url(../images/liststyle.png); 
+	list-style: none; 
 	padding: 0;
 }
 
@@ -200,6 +229,11 @@ $link-hover: lighten($link-normal, 20);
 
 .action-panel ul li a:hover {
 	color:#f8c301;
+}
+
+.action-panel ul li a {
+	@include link-colors($link-normal, $link-hover, $link-hover, $link-normal, $link-hover);
+	font-family: $open-condensed;
 }
 
 

@@ -1,0 +1,23 @@
+#footer {
+
+	#footerInfo {
+		background: rgba(0,0,0,0.4);
+	}
+
+	.block {
+		float: left;
+ 
+		a {
+			@include link-colors($footer-link, $footer-link-hover, $footer-link-hover, $footer-link, $footer-link-hover);
+		}
+	}
+
+	div.footermap {
+		font-size: 12px;
+		text-align: left;
+	}
+}
+
+#bottomInfo {
+	background: none;
+}

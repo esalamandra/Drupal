@@ -24,11 +24,6 @@
 .header__site-name {
   margin: 0;
   @include adjust-font-size-to( $h1-font-size );
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 4em;
-  text-transform: uppercase;
-  padding-left: 15px;
 }
 
 /* The link around the name of the website. */
