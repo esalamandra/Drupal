@@ -23,11 +23,7 @@ drush dl context-7.x-3.x-dev
 drush el context
 drush en capacha cloudflare rules boost httpr memcache microdata metatag
 drush dl zen-7.x-6.x-dev admin_menu-7.x-3.x-dev  module_filter-7.x-2.x-dev widgets-7.x-1.x-dev sociallogin-7.x-4.x-dev
-drush en zen
-drush en admin_menu
-drush en module_filter
-drush en widgets
-drush en sociallogin
+drush en zen admin_menu module_filter widgets sociallogin
 drush dl elysia_cron-7.x-2.x-dev 
 drush en elysia_cron
 drush dl php_error-7.x-1.x-dev 
