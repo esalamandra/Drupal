@@ -21,11 +21,7 @@ drush dl ckeditor-7.x-1.x-dev
 drush en ckeditor
 drush dl context-7.x-3.x-dev
 drush el context
-drush en capacha cloudflare
-drush en rules boost httpr
-drush en memcache
-drush en microdata
-drush en metatag
+drush en capacha cloudflare rules boost httpr memcache microdata metatag
 drush dl zen-7.x-6.x-dev
 drush en zen
 drush dl admin_menu-7.x-3.x-dev 
