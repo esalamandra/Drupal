@@ -10,23 +10,10 @@ drush dl views-7.x-3.x-dev advagg-7.x-2.x-dev fast_404-7.x-1.x-dev xmlsitemap-7.
 drush en views advagg fast_404 xmlsitemap ckeditor context capacha cloudflare rules boost httpr memcache microdata metatag
 drush dl zen-7.x-6.x-dev admin_menu-7.x-3.x-dev  module_filter-7.x-2.x-dev widgets-7.x-1.x-dev sociallogin-7.x-4.x-dev
 drush en zen admin_menu module_filter widgets sociallogin
-drush dl elysia_cron-7.x-2.x-dev 
-drush en elysia_cron
-drush dl php_error-7.x-1.x-dev 
-drush en php_error
-drush dl dfw-7.x-1.x-dev 
-drush en dfw
-drush dl views_slideshow-7.x-3.x-dev 
-drush en views_slideshow
-drush dl metatags_quick-7.x-2.x-dev 
-drush en metatags_quick
-drush dl pathauto-7.x-1.x-dev
-drush en pathauto
-drush dl redirect-7.x-1.x-dev
-drush dl scheduler-7.x-1.x-dev
-drush en site_map
-drush dl views_bulk_operations-7.x-3.x-dev
-drush en views_bulk_operations
+drush dl elysia_cron-7.x-2.x-dev php_error-7.x-1.x-dev dfw-7.x-1.x-dev views_slideshow-7.x-3.x-dev  metatags_quick-7.x-2.x-dev   
+drush en elysia_cron php_error dfw views_slideshow metatags_quick
+drush dl pathauto-7.x-1.x-dev redirect-7.x-1.x-dev scheduler-7.x-1.x-dev views_bulk_operations-7.x-3.x-dev
+drush en pathauto site_map views_bulk_operations
 drush dl views_arg_parent_term-7.x-1.x-dev
 drush en views_arg_parent_term
 drush en cookiecontrol
