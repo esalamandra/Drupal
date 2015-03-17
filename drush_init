@@ -6,19 +6,8 @@ drush en l10n_update
 drush l10n-update
 drush en book php 
 drush en forum blog poll
-drush dl views-7.x-3.x-dev
-drush en views
-drush dl advagg-7.x-2.x-dev 
-drush en advagg
-drush dl fast_404-7.x-1.x-dev
-drush en fast_404
-drush dl xmlsitemap-7.x-2.x-dev
-drush en xmlsitemap
-drush dl ckeditor-7.x-1.x-dev
-drush en ckeditor
-drush dl context-7.x-3.x-dev
-drush el context
-drush en capacha cloudflare rules boost httpr memcache microdata metatag
+drush dl views-7.x-3.x-dev advagg-7.x-2.x-dev fast_404-7.x-1.x-dev xmlsitemap-7.x-2.x-dev ckeditor-7.x-1.x-dev context-7.x-3.x-dev
+drush en views advagg fast_404 xmlsitemap ckeditor context capacha cloudflare rules boost httpr memcache microdata metatag
 drush dl zen-7.x-6.x-dev admin_menu-7.x-3.x-dev  module_filter-7.x-2.x-dev widgets-7.x-1.x-dev sociallogin-7.x-4.x-dev
 drush en zen admin_menu module_filter widgets sociallogin
 drush dl elysia_cron-7.x-2.x-dev 
