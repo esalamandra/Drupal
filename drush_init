@@ -4,11 +4,8 @@ drush language-enable pl
 drush language-default pl
 drush en l10n_update
 drush l10n-update
-drush en book
-drush en blog
-drush en forum
-drush en php
-drush en poll
+drush en book php 
+drush en forum blog poll
 drush dl views-7.x-3.x-dev
 drush en views
 drush dl advagg-7.x-2.x-dev 
@@ -38,7 +35,6 @@ drush dl pathauto-7.x-1.x-dev
 drush en pathauto
 drush dl redirect-7.x-1.x-dev
 drush dl scheduler-7.x-1.x-dev
-drush dl site_map
 drush en site_map
 drush dl views_bulk_operations-7.x-3.x-dev
 drush en views_bulk_operations
