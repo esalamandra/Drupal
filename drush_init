@@ -15,8 +15,7 @@ drush en elysia_cron php_error dfw views_slideshow metatags_quick
 drush dl pathauto-7.x-1.x-dev redirect-7.x-1.x-dev scheduler-7.x-1.x-dev views_bulk_operations-7.x-3.x-dev
 drush en pathauto site_map views_bulk_operations
 drush dl views_arg_parent_term-7.x-1.x-dev
-drush en views_arg_parent_term
-drush en cookiecontrol
+drush en views_arg_parent_term cookiecontrol
 
 drush @sites en uc_catalog contact metatag_context  
 metatag_dc metatag_opengraph metatag_twitter_cards metatag_views php uc_product
